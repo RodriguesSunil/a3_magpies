@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/ideal-jobs.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Ideal Jobs | The Magpies [A2 Group 10]</title>
+</head>
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('ideal-jobs')">Ideal Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
+                        <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
+                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
+                        <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+           <page-root>
+                <div class="hero-2">
+                    <div>
+                        <h1>Ideal Jobs</h1>
+                    </div>
+                    <div style="display:flex; justify-content:center;">
+                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                    </div>
+                </div>
+
+                <div class="page-content">
+
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="assets/ideal-jobs/chart-1.png" width="300" alt="chart of ideal jobs">
+                        </div>
+                        <div class="content-container">
+                            <h1>Ideal Jobs</h1>
+                            <p>
+                                At this stage, most of the Team members, have already thought about the next Paths to take and a certain idea of the field they want to fit in when they achieve sufficient skills. The Ideal Job is in some ways a reflection of the results taken when we have done the profile tests in the last assignment. Some of us want to keep in the same field but also articulate more skills to fit in the market and on the other hand, some are just starting a new career and challenging ourselves when changing drastically the actual field.<br>
+                                There are also some overlaps between team members that were good for the development of this assignment.
+                            </p>
+                            <p>
+                                Sunil Rodrigues is looking for an upskill for the market he is already in. A Data analyst job is ideal in the mining field as he has vast knowledge in it and wants to solve problems that he sees daily.<br>
+                                Jacqueline Penas wants to help others in the IT Support Specialist field, her goal is to achieve enough knowledge and be able to assist and lead others in the industry.<br>
+                                Raul, Alexander and Joao are looking for the Development part of the IT industry, with overlapping skills needed like Programming, they are aiming for the creative section of this gigantic world, Alex and Raul are looking for the App field that has grown exponentially for the last decade and Joao is looking for the Software development that has also made an impressive difference for the improves on the technology.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

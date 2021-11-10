@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/project-ideas.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Project Ideas | The Magpies [A2 Group 10]</title>
+</head>
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('ideal-jobs')">Ideal Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
+                        <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
+                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
+                        <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+           <page-root>
+                <div class="hero-2">
+                    <div>
+                        <h1>Project Ideas</h1>
+                    </div>
+                    <div style="display:flex; justify-content:center;">
+                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                    </div>
+                </div>
+
+                <div class="page-content">
+
+                    <div class="card">
+                        <div class="content-container">
+                            <h1>Overview</h1>
+                            <p>
+                                The project is to create a mobile application for some doctor’s services. This will provide a convenient and more time friendly way for people without emergencies to interact with the local General Practitioner. There may also be a benefit of reducing the cost of the consultations due to efficiency. The application will provide video and audio consultations, blood pressure readings, weight, and body mass data to the doctor. This information will be obtained through the use of external devices such as a smart watch and smart scales. It will allow prescriptions and referrals to be sent electronically and provide an online booking service.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content-container">
+                            <h1>Motivation</h1>
+                            <p>
+                                I have many medical conditions that require medical appointments with my GP. Around 65% of my visits are for prescriptions or blood pressure checks. When I attend the surgery, I can wait anywhere from 10 minutes to an hour just to see the doctor. Once I get called by the doctor, I am out again in 10 minutes or under. If I include the time to travel to and from the surgery, it can take up to 2 hours of my day for a simple appointment. I have a few friends who do not live in the metropolitan area who also must travel more than 20 KM to see their doctor. I believe a mobile app like this will reduce the need to visit the doctor, save time and free the doctor’s surgery up for more pressing appointments.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="content-container">
+                            <h1>Description</h1>
+                            <p>
+                                The product will be a mobile application that will run on Android or iOS. It will integrate with smart watches and smart scales. The features will include the following:
+                            </p>
+                            <ul>
+                                <li>
+                                    <b>Online booking service</b> - 
+                                    This will allow the patient to book appointments with the doctor and select what the appointment is for at the time of booking. This is like other applications on the market. 
+                                </li>
+                                <li>
+                                    <b>Video and audio appointments</b> - 
+                                    There will be an option to book a video or audio appointment with the doctor, although this will not be a requirement if the patient is requesting services that do not require immediate contact. 
+                                </li>
+                                <li>
+                                    <b>Blood pressure</b> - 
+                                    Blood pressure will be monitored via a smart watch and relayed back to the application. At the time of booking, this will be requested and sent to the doctor.
+                                </li>
+                                <li>
+                                    <b>Weight and body mass</b> - 
+                                    There are two methods in which this can be collected, the first is using smart scales and the second is using a smart watch that provides the feature. Both methods will relay the information to the application and send it to the doctor at the time of the booking.
+                                </li>
+                                <li>
+                                    <b>Prescriptions</b> - 
+                                    Prescriptions can be requested via the app if the patient is currently taking the requested medication. Once prepared, the prescription can be sent directly to a pharmacy or sent electronically to the patient to print out and present at a pharmacy.
+                                </li>
+                                <li>
+                                    <b>Referrals</b> - 
+                                    A doctor will be able to raise a referral for the patient and send it electronically to the place of referral or to the patient to print at home.
+                                </li>
+                                <li>
+                                    <b>ECG</b> - 
+                                    The latest smart watches such as the Samsung Galaxy Watch4 is capable of ECG monitoring and is registered with the Australian Register of Therapeutic Goods. This data can also be sent to the doctor when requested.
+                                </li>
+                                <li>
+                                    <b>Historic data and trending</b> - 
+                                    Monitoring blood pressure, weight, ECG data, and body mass electronically will allow for trending and reference points for the doctor.
+                                </li>
+                            </ul>
+                            <p>
+                                The doctor will be able to perform all his/her operations on the application either via the mobile application or via a secure web page.<br>
+                                The backend for the application would involve clustered application and database servers with an API written in PHP, fault tolerant storage and network load balancers. To ensure the privacy of the patients, only doctors will have access to patient data and that will be gained via 2 factor authentication across encrypted tunnels between the client and the server. The infrastructure will be housed in a secure datacentre, with hourly backups be performed using a disk to disk to cloud method.<br>
+                                This application will be useful to individuals who must travel significant distances to go to their doctor or have mobility issues because it will reduce the time of visits and the frequency of required physical visits. In addition to these benefits, it will also benefit time poor individuals who put off visits because they are busy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content-container">
+                            <h1>Tools and Technologies</h1>
+                            <p>
+                                The hardware requirements for the project are listed below:
+                            </p>
+                            <ul>
+                                <li>
+                                    <b>Network Firewalls</b> - 
+                                    At least 4 firewalls configured in a failover cluster.  The configuration will use CheckPoint firewalls because they are easy configuration, can scale to 52 gateways/firewalls (next generation firewall buyer's guide, n.d.) with an intuitive management interface (next generation firewall buyer's guide, n.d.) 
+                                </li>
+                                <li>
+                                    <b>Routers</b> - 
+                                    At least 2 network routers in a failover configuration.
+                                </li>
+                                <li>
+                                    <b>Network Switches</b> - 
+                                    Minimum of 2 switches configured in a stack.
+
+                                </li>
+                                <li>
+                                    <b>Servers</b> - 
+                                    A minimum of 5 servers running OpenStack, 2 for management and 3 for backend services.   For the servers, we will be using Dell PowerEdge R830 Rack Servers (PowerEdge R830 4-socket 2U rack server | Dell Australia, 2021).  We have decided on these servers because they are designed for virtualisation, with 4 CPU sockets, and 48 DIMM slots for up to 64GB DDR4 RAM in each slot.  (PowerEdge R830 4-socket 2U rack server | Dell Australia, 2021).
+                                </li>
+                                <li>
+                                    <b>Storage</b> - 
+                                    TrueNAS storage appliances configured in a cluster. These will run storage pools configured on top of RAID 6 disks. The file system used will be ZFS.  TrueNAS is an open-source Network Attached Storage device.  As this project requires the data to be available 24x7, with easily scalability, TrueNAS Core which is the free edition was not suitable because it is only community supported whereas the TrueNAS ENTERPRISE storage appliances come with “24x7 Professional Support” (TrueNAS Open Storage | ZFS for the Home to the Data Center, 2021).  TrueNAS also allows the running of Linux containers which will more than likely be used for running services such as Apache2. 
+
+                                </li>
+                            </ul>
+
+                            <br>
+                            <p>
+                                The software requirements for the backend are:
+                            </p>
+                            <ul>
+                                <li>
+                                    <b>OpenStack</b> - 
+                                    OpenStack is “The Most Widely Deployed Open-Source Cloud Software in the world” (Open Source Cloud Computing Infrastructure - OpenStack, 2021).  OpenStack has been chosen due to it being open source.  Not only does this have financial benefits, it also provides a massive support base for the product.
+                                </li>
+                                <li>
+                                    <b>Linux OS</b> - 
+                                    Ubuntu has been chosen as the Linux Operating System for the virtual servers.  Ubuntu is the 4th most used Linux distribution in 2021 (Cánepa, 2021). Being open-source and extremely popular means that support is in abundance for this operating system. 
+                                </li>
+                                <li>
+                                    <b>Apache</b> - 
+                                    Apache is an open-source HTTP server.  Its goal is to provide a secure, efficient and extensible server that provides HTTP services in sync with current HTTP standards (Group, 2021). Apache holds about 34% of the market. (Which are the most used web servers? - Stackscale, 2021).  Apache was chosen because it is open-source and hugely supported around the globe.
+                                </li>
+                                <li>
+                                    <b>Maria DB</b> - 
+                                    MariaDB is an open-source relational database, made by the original developers of MySQL.  MariaDB is built on the values of performance, stability, and openness. (MariaDB Foundation - MariaDB.org, 2021). Maria DB was picked for the same reason as Apache, it is open-source and hugely supported.
+                                </li>
+                                <li>
+                                    <b>Software</b> for development will be MIT App Inventor or Google Flutter. 
+                                </li>
+                            </ul>
+                            <br>
+                            <p>
+                                Skills required for the project: 
+                            </p>
+                            <ul>
+                                <li>Networking Engineer to configure the firewalls, routers and switches.</li>
+                                <li>OpenStack specialist to install and configure OpenStack.</li>
+                                <li>Storage Engineer to configure the storage.</li>
+                                <li>Installers to install the hardware, some vendors require a certified engineer to install their products, others do not.</li>
+                                <li>A Flutter developer or a MIT App Inventor specialist.</li>
+                                <li>Linux Engineer to configure the Operating Systems and associated services.</li>
+                                <li>PHP developer – to write the backend and API.</li>
+                                <li>Database administrator for MariaDB.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content-container">
+                            <h1>Outcome</h1>
+                            <p>
+                                If the project is successful, there will be full working infrastructure to support the application, the application will be complete and thoroughly tested. There will be push to sign up doctors surgeries, specialists and pharmacies so people can start using it to their advantage. A successful project will lead to easier interaction with doctors for patients, patients will have greater access, time will be saved, doctors will be able to serve more patients than before, and the burden on GP waiting rooms will have been reduced.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="card">
+                        <div class="content-container">
+                            <h1>References</h1>
+                            <ul>
+
+
+                                <li>n.d. next generation firewall buyer's guide. [ebook] CheckPoint, pp.17,19. Available at: <http://www.checkpoint.com> [Accessed 16 October 2021].</li>
+                                <li>OpenStack. 2021. Open Source Cloud Computing Infrastructure - OpenStack. [online] Available at: <https://www.openstack.org/> [Accessed 16 October 2021].</li>
+                                <li>Dell. 2021. PowerEdge R830 4-socket 2U rack server | Dell Australia. [online] Available at: <https://www.dell.com/en-au/work/shop/povw/poweredge-r830> [Accessed 16 October 2021].</li>
+                                <li>TrueNAS Open Storage | ZFS for the Home to the Data Center. 2021. TrueNAS Open Storage | ZFS for the Home to the Data Center. [online] Available at: <https://www.truenas.com/> [Accessed 16 October 2021].</li>
+                                <li>Cánepa, G., 2021. 10 Top Most Popular Linux Distributions of 2020. [online] Tecmint.com. Available at: <https://www.tecmint.com/top-most-popular-linux-distributions/> [Accessed 17 October 2021]. </li>
+                                <li>Stackscale. 2021. Which are the most used web servers? - Stackscale. [online] Available at: <https://www.stackscale.com/blog/top-web-servers/> [Accessed 17 October 2021]. </li>
+                                <li>MariaDB.org. 2021. MariaDB Foundation - MariaDB.org. [online] Available at: <https://mariadb.org/> [Accessed 15 October 2021].</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    
+                </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

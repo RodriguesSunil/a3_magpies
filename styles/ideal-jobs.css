@@ -1,0 +1,78 @@
+page-root .page-content {
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+page-root .page-content:last-child { margin-top: 0; }
+
+    page-root .page-content .card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.2em;
+        padding: 1.2em;
+        margin-bottom: 2.5em;
+    }
+            page-root .page-content .card.thumbnail-collection {
+                flex-wrap: wrap;
+                gap: 0.4em;
+                justify-content: center;
+            }
+    page-root .page-content .card:last-child { margin-bottom: 0; }
+        page-root .page-content .card .image-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            page-root .page-content .card .image-container img {
+                border-radius: 14px;
+            }
+        page-root .page-content .card .content-container {
+            padding: 1em;
+            font-size: 16px;
+            max-width: 70%;
+            line-height: 28px;
+        }
+
+
+
+page-root .card .thumbnail {
+    position: relative;
+    width: 400px;
+    height: 225px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: var(--panel-default-border)
+}
+    page-root .card .thumbnail a {
+        padding: 0; margin: 0;
+        color: inherit;
+        text-decoration: inherit;
+    }
+    page-root .card .thumbnail img {
+        width: 100%;
+        height: 100%;
+        padding: 0; margin: 0;
+    }
+    page-root .card .thumbnail .title {
+        position: absolute;
+        bottom: 0; left: 0;
+        padding: 0.6em 0.8em;
+        width: 100%;
+        background-color: #0006;
+        color: #fff;
+        font-size: 18px;
+    }
+    page-root .card .thumbnail .play-btn {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        color: #fffd;
+    }
+        page-root .card .thumbnail .play-btn svg {
+            width: 100%;
+            height: 100%;
+        }

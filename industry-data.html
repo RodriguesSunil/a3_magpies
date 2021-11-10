@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/industry-data.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Industry Data | The Magpies [A2 Group 10]</title>
+</head>
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('ideal-jobs')">Ideal Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
+                        <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
+                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
+                        <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+           <page-root>
+
+            <div class="hero-2">
+                <div>
+                    <h1>Industry Data</h1>
+                </div>
+                <div style="display:flex; justify-content:center;">
+                    <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                </div>
+            </div>
+
+            <div class="page-content">
+
+                <section>
+                    <h1>Teams Ideal Job Profile</h1>
+                    <div class="img-full">
+                        <img src="assets/industry-data/burningglass.png" alt="banner-image">
+                    </div>
+                    <div class="content">
+                        <h2>Team Jobs compared with 2018 Burning Glass Data</h2>
+
+                        <p>
+                            The Magpies have a diverse range of ideal jobs, while 3 members picked similar roles for their ideal job.  Everyone’s ideal job is shown below along with the number of positions advertised and where the roles rank regarding advertised positions in 2018 according to Burning Glass    
+                        </p>
+                        <table style="margin-top:0.8em;">
+                            <tr><td>Team Member</td><td>Ideal Job</td><td>Adverised Positions</td><td>Future Outlook<sup>2</sup></td><td>Rank Sought After</td></tr>
+                            <tr><td>Alex Hutton</td><td>Mobile App Developer</td><td>92</td><td>Very Strong</td><td>96</td></tr>
+                            <tr><td>Sunil Rodrigues</td><td>Data Analyst</td><td>162</td><td>Very Strong</td><td>47</td></tr>
+                            <tr><td>Jacqueline Penas</td><td>IT Support Specialist</td><td>52</td><td>Very Strong</td><td>168</td></tr>
+                            <tr><td>Joao Nunes Doege</td><td>Software Developer</td><td>337</td><td>Very Strong</td><td>19</td></tr>
+                            <tr><td>Raul Junquieira DaSilva</td><td>App Developer</td><td>92</td><td>Very Strong</td><td>96</td></tr>
+                        </table>
+                        
+                        <img src="assets/industry-data/industry-data-1.png" width="882px"alt="chart">
+
+                        <span class="subtitle">Findings</span>
+                        <p>
+                            We can see from the above that Software Developer is by far the most in demand job from all the ideal jobs of the group.  Data analyst comes second with around half the advertised positions as first placed software developer and IT support specialist has the least demand. Due to the volume of job titles listed in the Burning Glass document, the above does not represent a fair comparison because a job can have many different titles depending on who the employer is and we could get a better representation by grouping job titles into one job to remove what the industry would consider duplicate titles.  IT support specialist for instance can also be referred to as System Engineer (which is the number 4 in demand job on the list), Desktop Support, and many others.  The same applies to the development roles, an argument could be made that Mobile App Developer, Software Developer, and App Developer are very similar, with the differences being negligible.  According to joboutlook.gov.au, in 2018, all the groups ideal roles had a very strong outlook <sup>2</sup>.
+                        </p>
+                        <p>
+                            To identify a set of required skills we have put Mobile App Developer, Software Developer, and App Developer under the umbrella of ‘Programming’, as they practically duplicated each other. We used the Burning Glass data to identify the following:
+                            <ul>
+                                <li>This table lists the top 30 skills in demand from employers</li>
+                                <li>The following 4 IT Specific skills; Building Relationships, Business Management, Customer Service, and Business Process have been considered General Skills and as such, moved to the appropriate table section</li>
+                                <li>Numbers 31-34 from the IT-specific skills were used to replace 4 skills that moved section</li>
+                            </ul> 
+                            The Groups required skill set is detailed in the table below:
+                        </p>
+                        <table style="margin-top:0.8em">
+                            <tr><td>Skill</td><td>Programming</td><td>Data Analyst</td><td>IT Support Specialist</td></tr>
+                            <tr><td><b>IT Specific</b></td></tr>
+                            <tr><td>SQL</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Java Script</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>Microsoft Windows</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Microsoft C#</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>Technical Support</td><td>X</td><td></td><td>X</td></tr>
+                            <tr><td>Project Management</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>LINUX</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>.NET Programming</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>ITIL</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Microsoft Office</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Oracle</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>SAP</td><td></td><td></td><td>X</td></tr>
+                            <tr><td>HTML5</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>Software Engineering</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>Git</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Python</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>SQL Server</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>jQuery</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>Cisco</td><td></td><td></td><td>X</td></tr>
+                            <tr><td>Graphic Design</td><td></td><td></td><td></td></tr>
+                            <tr><td>Microsoft Excel</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Scrum</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Business Analysis</td><td></td><td>X</td><td></td></tr>
+                            <tr><td>Website Production</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>ASP</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>Systems Engineering</td><td></td><td></td><td>X</td></tr>
+                            <tr><td>Technical Industry Knowledge</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>PHP</td><td>X</td><td></td><td></td></tr>
+                            <tr><td>AngularJS</td><td>X</td><td></td><td></td></tr>
+                            <tr><td><b>General Skills</bB></td></tr>
+                            <tr><td>Building Relationships</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Business Management</td><td></td><td></td><td></td></tr>
+                            <tr><td>Customer Service</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Business Process</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Communication Skills</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Problem Solving</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Organisation Skills</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Writing</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Team Work / Collaboration</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Troubleshooting</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Planning</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Detail-Orientated</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Creativity</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Research</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Leadership</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Time Management</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Mentoring</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Quality Assurance and Control</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Presentation Skills</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Meeting Deadlines</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Analytical Skills</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Team Building</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Management</td><td></td><td></td><td></td></tr>
+                            <tr><td>Mutli-Tasking</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>English</td><td></td><td></td><td></td></tr>
+                            <tr><td>Building Effective Relationships</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Articulate</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Self-Starter</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Decision Making</td><td>X</td><td>X</td><td>X</td></tr>
+                            <tr><td>Computer Skills</td><td>X</td><td>X</td><td>X</td></tr>
+ 
+                        </table>
+
+                        <p>
+                            The top 30 IT specific skills account for 48% of total job postings for 2018.  Programming doesn’t require 5 of the top 30 skills, that’s 83% of top 30 skills being required for programming.  Data Analyst has 16 of the top 30 skills not required so requires 47% of those skills.  IT Support Specialist sits in the middle with 12 top 30 skills not being a requirement.  IT Support Specialist requires 60% of the top 30 skills.
+                            
+                        </p>
+                      
+                        <p>
+                            96% of all general skills in demand in job postings in 2018 are taken by the top 30 general skills.  All 3 ideal jobs do not have a requirement for 3 general skills, that means 90% of the skills in demand are required.
+                        </p>
+                        <table style="margin-top:0.8em;">
+                            <tr><td>Ideal Job</td><td>% of Top 30 in demand IT Specific Skills</td><td>% of Top 30 in demand General Skills</td></tr>
+                            <tr><td>Programming</td><td>83%</td><td>90%</td>td></tr>
+                            <tr><td>Data Analyst</td><td>47%</td><td>90%</td></tr>
+                            <tr><td>It Support Specialist</td><td>60%</td><td>90%</td></tr>
+                            
+                        </table>
+                        
+                        <p>
+                            From this summary we can see that the majority of the general skills in demand are required for all jobs which demonstrates that general skills are in high demand and considered imported to employers.  The IT Specific skills is slightly different with a range from 47% to 83%.  We wonder if it is a case of the fewer percent of IT specific skills required would indicate a specialised job whereas a higher percent indicates a more generalised role.
+                            <br>
+                            In relation to demand from employers, this indicates that there would be most demand for developers followed by IT Support Specialists and lastly Data Analysts.  
+                            <br>
+                            The 3 general skills not required by the ideal jobs are identical for all 3, they are Business Management, Management, and English.  The 3 highest ranked IT-specific skills which are not in the required skill set differs by job and are detailed below.
+                            
+                        </p>
+                        <p>
+                            <b>Programming</b> - SAP, CISCO and Graphic design
+                            <br>
+                            <b>Data Analyst</b> - JavaScript, JAVA and Microsoft C#
+                            <br>
+                            <b>IT Support Specialist</b> - JavaScript, JAVA and Microsoft C#
+                        </p>
+                        <h2>Having looked at the Burning Glass data, has your opinion of ideal job changed? Why or Why not?</h2>
+                        
+                        <span class="subtitle">Alex</span>
+                        <p>
+                            The only change I would make to my ideal job is that I would broaden the job description to software developer simply because that’s the role most in demand in the field I am aiming for.
+                        </p>
+                        <span class="subtitle">Sunil</span>
+                        <p>
+                            Given the job market data shown and the differences in skills required between programming and data analyst, I would most likely upskill myself so that there are opportunities to sway either way. The skills in programming would enable me to work well in data analytics. It would give me a future pathway in Business Intelligence and data modelling also.
+                        </p>
+                        <span class="subtitle">Jacqueline</span>
+                        <p>
+                            Based on the job market data, my ideal job has not changed. I would still like to become an IT Support Specialist. I can upskill my abilities by obtaining certifications and accreditations that align with my ideal job, but at the moment my knowledge is sufficient.
+                        </p>
+                        <span class="subtitle">Joao</span>
+                        <p>
+                            With the highest number of advertisement positions and the highest percentage of in-demand IT-specific skills, Software Developer is a strategic position to take soon after the completion of my degree. Taking such a career path will give me important core skills and experience within the IT industry and make me versatile within different career paths in the far future.
+                        </p>
+                        <span class="subtitle">Raul</span>
+                        <p>
+                            After all the research given, My position would not change, I would just also look into Software Developer because the demand is really high and it would be easier to try it when I start my IT career.
+                        </p>
+
+                        
+
+            </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

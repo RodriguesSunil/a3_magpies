@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/it-work.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>IT Work | The Magpies [A2 Group 10]</title>
+</head>
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('ideal-jobs')">Ideal Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
+                        <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
+                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
+                        <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+           <page-root>
+
+            <div class="hero-2">
+                <div>
+                    <h1>IT Work</h1>
+                </div>
+                <div style="display:flex; justify-content:center;">
+                    <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                </div>
+            </div>
+
+            <div class="page-content">
+
+                <section>
+                    <h1>INterview with an IT Professional</h1>
+                    <div class="img-full">
+                        <img src="assets/it-work/Solutions_Architect.jpg" width="500px"alt="banner-image">
+                    </div>
+                    <div class="content">
+                        <h2>Janesh Ragwani, Solution Architect</h2>
+
+                        <p>
+                            Joao Nunes Doege took the opportunity to interview Janesh Ragwani a Solution Architect working in the IT field for many years. Jacqueline Penas was the observer and transcribed the interview for the group. The audio recording and the transcript is attached below:   
+                        </p>
+                            
+                        <div style="text-align: center;">
+                            <audio controls>
+                                <source src="assets/it-work/Interview_Transcript_JPenas.m4a" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <span class="subtitle">Transcript of the Interview</span>
+                        <table style="margin-top:0.8em;">
+
+
+
+                            <tr><td>Joao</td><td>Hello,</td></tr>
+                            <tr><td>Janesh</td><td>Hey, how's it going?</td></tr>
+                            <tr><td>Joao</td><td>Oh, good.</td></tr>
+                            <tr><td>Janesh</td><td>You're now good to go.</td></tr>
+                            <tr><td>Joao</td><td>This is my first interview.</td></tr>
+                            <tr><td>Janesh</td><td>I'm the one getting interview.</td></tr>
+                            <tr><td>Joao</td><td>I'll get exactly that.</td></tr>
+                            <tr><td>Janesh</td><td>That's it.</td></tr>
+                            <tr><td>Joao</td><td>I'm gonna have, I'm gonna record it if that's okay with you.</td></tr>
+                            <tr><td>Janesh</td><td>Yeah, sure.  </td></tr>
+                            <tr><td>Joao</td><td>So, what's gonna happen? One of our teammates is going to transfer, just write it down and we're going to post it on the website. </td></tr>
+                            <tr><td>Janesh</td><td>Okay, so there is a video going to get posted on the website, or just, Okay, cool. That's all good. Let's see, check my camera then.</td></tr>
+                            <tr><td>Joao</td><td>Excellent. And then see Sorry about that.  </td></tr>
+                            <tr><td>Janesh</td><td>That's okay.  </td></tr>
+                            <tr><td>Joao</td><td>Hello. How can I say your name again?  </td></tr>
+                            <tr><td>Janesh</td><td>Janesh </td></tr>
+                            <tr><td>Joao</td><td>I hope you don't mind my accent?  </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, It’s okay. </td></tr>
+                            <tr><td>Joao</td><td>You can understand. </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, I have a strange accent to. </td></tr>
+                            <tr><td>Joao</td><td>It can barely, can barely see any problems at all.  </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, no worries. </td></tr>
+                            <tr><td>Joao</td><td>Alright, I'm going to start recording. Hello, Janesh, thank you for taking your time and talking to us today. We are just making this interview to find out about your IT work? all the areas. Everything you do. So please tell us about your IT work? What exactly do you do? </td></tr>
+                            <tr><td>Janesh</td><td>Okay, so I'm Enterprise Architect for kinetic IT. So I've been in IT for quite some time. But yeah, so basically, my, my work involves a lot of planning and solution designing for the customer. And basically tried to line them up with roadmaps for the next three to five years. And working through that. </td></tr>
+                            <tr><td>Joao</td><td>So seems that you work with a lot of customers. You work with customers every day. </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, so we basically are a managed service provider and we outsource to customers. So our customer we based out on site and working with the customer daily and work with their requirements and what they need from us. So yeah, we're pretty much at a customer site 24 basically 40 hours a week </td></tr>
+                            <tr><td>Joao</td><td>Oh, and with the current pandemic, and of health, have you been working from home, are you still have been able to do your job, like you used to before the pandemic? </td></tr>
+                            <tr><td>Janesh</td><td>Yes, so they're the pandemic has changed a few things for us. In my role, we have a lot of face to face meetings. So I haven't been on the tools for some time on mostly either on meetings and designing and architecture work. So that has changed where we have to kind of evolve similar to the way we're having this conversation usually you'd be in a meeting room talking to each other and have that personal connection going and talking and reading how the customer is reacting to what you're saying. So it's improved output and because we have everyone the meetings are lined up and you kind of just go in and finish and then walk up and up quickly. So there's a bit more efficiency out there but we've noticed that we just sitting in back to back meetings. So not great for the health per se in it because we sit at desks a long time but it's definitely had positive outcomes.  </td></tr>
+                            <tr><td>Joao</td><td>Sorry..  </td></tr>
+                            <tr><td>Janesh</td><td>That's okay, take your time, no rush. </td></tr>
+                            <tr><td>Joao</td><td>And besides the customers, what type, who are the other people you </td></tr>
+                            <tr><td>Janesh</td><td>So we interact with a lot of vendors. So we will have vendors from like VMware, Dell EMC, pointed Cisco, all top vendors out there. And whenever designing solutions or working with them, we will work with them to do pre sales. So we do have a lot of pre sales work in the design. So we're trying to find a solution for the customer and trying to work with what they would meet the requirements. So yeah, we work with a lot of vendors. </td></tr>
+                            <tr><td>Joao</td><td>And what aspects of your work do you spend most time on? </td></tr>
+                            <tr><td>Janesh</td><td>A lot of the work is design work. And so we in architecture spaces, spend a lot of time in Visio, or basically drawing diagrams, drawing up solutions, and documentation around design and solution architecture work or technical architecture documentation. So we spend a lot of time in documentation mostly </td></tr>
+                            <tr><td>Joao</td><td>Documentations, yeah. In your words, like in a simplified way, for someone who doesn't know much about IT, what would a Solutions Architect do? Like? </td></tr>
+                            <tr><td>Janesh</td><td>So what we do is, the simplest term is, for example, if you're the customer, when you come and say, hey, I want to I want to use a system or design, if I want you to design a system for me that does a certain function, or there is an application that is a legacy application, and we want to make it basically upgraded and bring it up to the new age, using cloud technologies, cloud native solutions, for example. So what we do there is we'll go and then find out what this application would be doing. And then actually start designing a solution for it. So we would have to talk to the application owners, the users, go through case studies, see what it is what they using, and then we kind of build a whole new solution, starting from the solution, document itself, and the second time, so that's why we're spending a lot of time in the architecture is based around designing and documentation, because we're understanding how this whole thing will be good together. </td></tr>
+                            <tr><td>Joao</td><td>So that means that if you have like a team with just gonna do all the technical work? </td></tr>
+                            <tr><td>Janesh</td><td>Yes.  </td></tr>
+                            <tr><td>Joao</td><td>You communicate with them?  </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, so what we do is we do the design, work and start, we get it all approval by the customer. And then we have a technical team who is on the tools who will actually do the deployment. So that's where we step out. And we basically let them deal with the actual implementation. So we do the design, we bring them in as we need for their expertise, or what they know or what they would work with environment. And then we go from there, and then they take over for the build and deployment and setup. </td></tr>
+                            <tr><td>Joao</td><td>Okay, and what are some of the scheduling tools you use on your daily life for managing projects? </td></tr>
+                            <tr><td>Janesh</td><td>So we have we use a few of them, we use Microsoft Project. As a general, the basic tool that we have, then we're using Azure DevOps, for tickets, and working with that, by the projects, those are the main two remains that we use on project planning, and then managing tasks and managing projects. And the lifecycle of the entire deployment will be Azure DevOps. </td></tr>
+                            <tr><td>Joao</td><td>Getting excellent. What are your main strengths and skills in the industry? Sorry, for repeating. </td></tr>
+                            <tr><td>Janesh</td><td>That's fine. So the thing with us is, if you're looking, we have a wide range of skills for us to be at the level of Enterprise Architect, we've come from basically working on the tools learning every part of IT system that would work from networking software, server land, basically learning all those parts and understanding how everything works together for us to do what we can do. So we we've, we've had a lot of background of almost everything and anything we can do. So then we can get to this position of actually designing solutions. Because we understand or we have enough knowledge in every section of the industry to enable the customer to guide them better. So yeah, it's a bit of it'll be a simpler question. If we had like a systems engineer, with the guy there but for us, it's a much wider scope purely because of what we do. </td></tr>
+                            <tr><td>Joao</td><td>Okay, so yeah, so you don't we don’t have a system engineer? </td></tr>
+                            <tr><td>Janesh</td><td>So basically If you're looking at IT role starting up, you'd go as a service desk engineer avoids taking calls and doing what it is, then you'll have a systems engineer, a senior systems engineer, and then a technical specialist. And then the architects come into play. So you'll have a technical architect, a solutions architect, and an enterprise architect, that's the hierarchy you will come up through, the more higher up you go, the less tools work you do for your actual actual deployment. And actually getting into the systems and doing work is very less you go more on the design part. So the simplest ways if you look at a building architect, he designs the building blueprint, but he doesn't actually build it. This is similar concept, we will design everything, but we wouldn't do any voting there will be given to the engineers to do and then from that class, but we need to know on every part of their work. So we need to know what the skill sets and what they are. So we can actually design something that makes sense that can be deployed, otherwise, we will be designing something that the systems don't exist or wouldn't work with. So it's kind of a you have to know have to have the knowledge of across a broad knowledge of IT, for you to be able to do that. </td></tr>
+                            <tr><td>Joao</td><td>Yes. Very, very good. Slowly understanding everything.  </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, no, no,  </td></tr>
+                            <tr><td>Joao</td><td>It works and everything. So what would you say are the most sought after skills from your perspective into the job kind of job so far?  </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, for us. It's usually people skills, and talking and communicating with the director, CTO, CIOs, you have a very high audience who are priority and basically you have to be able to communicate well with them clearly with them and understand what they want be a good listener as well, because they're telling you this is the solution they want. And you don't make sure you want to deliver that and not something else that they didn't ask for. So it's more of the strength of communication documentation is another thing that you'd have to be very strong at. and designing of diagrams. So understanding what they're working for, and then trying to put it in a paper and show the diagram that it actually works. So yeah, those are the main ones that I would say would be in our position. </td></tr>
+                            <tr><td>Joao</td><td>Excellent. Pretty much coming to an end here because I am running out of questions, but what advice could you give to to an individual who aspires to join the IT industry? </td></tr>
+                            <tr><td>Janesh</td><td>So the IT industry, just be ready to learn all the time. So I've been in it for almost 15 plus years and are still always learning on the job. So you will never stop studying you'll keep going through that the market changes so move with a market where cloud technologies come in. Applications are just moving very quickly, we just need to know it's it's not the studying would not always be something like going to university and doing a studying or doing a course or like just general reading articles. See what's happening in there are a lot of blogs of influences in YouTube that you have that will be running America especially where they have new cloud technologies that come out before we even get them in Australia, for example. So it's be attracting where we are actually it's an advantage of us if you're in Australia, or a country that doesn't have the actual adoption of card very quickly. So we get technology a bit later on the preview or whatever the case is, so we can actually see what they've had. So doing research beforehand, it should be more of an interest than a job. So it's where we'll have an internal IT geek in you and you just try to just enjoy doing what you can and yeah, you kind of the rest of we just follow with it. But yeah, it's we're ready to learn all the way through because and adapt to different changes because the market changes very quickly. </td></tr>
+                            <tr><td>Joao</td><td>Yeah, excellent. And have you seen like you said, 15 years you've been doing this? Have the market? Like how, how much did that change it for you? Like is there any skill set you've learned back then, and today you it's pretty much obsolete or, or it's just evolved? </td></tr>
+                            <tr><td>Janesh</td><td>No, it's the reality is the concepts of pretty much the same, it's just it's just taken a bit more work out of you or a bit more or less so in the major shift has been about programming. So if you're a lot of a lot of emphasis become into programming and application development. 15 years ago, if you look at it, iPhones were just about coming out. Android devices and all applications weren't that big. It was all just standard solutions and that but now the application is where the market is and where your applicant programming Python language C sharp. That's where you're kind of leaning towards. So everything is software as a cord. You've got core operating systems now. Yeah. So it's the market has shifted, but you kind of have the basic understanding nav is there. But if you haven't done much of programming, then you probably be left quite behind because you have to try and catch up with that. But with with our case, being being at a at the top of the career of per se, and IT ranking. No skill is basically not utilised. Do you have to utilise everything that you've experienced in the last however long you've been in IT for, and pull and understand and make sense of you have to be able to have the depth of knowledge for you to be able to do what we do? In our case, so yeah, any knowledge is will be beneficial. You never know when but it might be beneficial. Maybe? Yeah, so yeah.  </td></tr>
+                            <tr><td>Joao</td><td>Excellent. I'm sorry, I didn't mean to interrupt you. </td></tr>
+                            <tr><td>Janesh</td><td>But I finished. </td></tr>
+                            <tr><td>Joao</td><td>Funny. Remember, maybe 10-15 years ago, I'm friends, we're starting. We're doing the same course that I'm doing now. And they were talking about Python and c++ and Java. And I thought back then, I don't know if we should learn this, it’s gonna change. And it seems to be the market seems to be using a lot of that sort of stuff nowadays. Because… </td></tr>
+                            <tr><td>Janesh</td><td>Yeah, absolutely. I mean, so it's a lot more adoption, right? It's, it's what the market and that's that's the thing with the market, it will change fairly quickly. It's what demand is and what you need that right. So the pandemic coming in there and everyone using zoom and teams, that market changed very quickly, where before where everyone was requested to go into the office, for example, and be in front of the customer ways. Now they're more adapted to you. I mean, the thing about the industry is you have to adapt, you'll have to adapt as much as fast as you can, and what's changing. But yeah, as I say, rest of the world moves a lot faster than we do. Therefore, we have a bit of an advantage and you just go and speak to them, network across the world with everyone, try and find out what's going on with different technologies. And that's the key basically, for us to stay ahead. I mean, the course who any course you learn any knowledge you have that it always accompanies will no matter where you go and how you run it, that knowledge will always keep building on. So yeah. </td></tr>
+                            <tr><td>Joao</td><td>Excellent. Um, let me see. I think I have most questions here. They are, like, I have a few more questions, but it's gonna be repeating what you've already. But thank you very much for your time.  </td></tr>
+                            <tr><td>Janesh</td><td>no worries at all. </td></tr>
+                            <tr><td>Joao</td><td>I appreciate it. I hope it was pleasant. </td></tr>
+                            <tr><td>Janesh</td><td>Yeah. Now you're absolutely fine for first interview, you're pretty good. Don't worry about it once you get a bit comfortable in a job. That shouldn’t be awkward. </td></tr>
+                            <tr><td>Joao</td><td>Thank you. All right. Thanks. Thank you very much. </td></tr>
+                            <tr><td>Janesh</td><td>Cool.. </td></tr>
+                            <tr><td>Joao</td><td>Thank you, see ya. </td></tr>
+                        </table>
+                       
+                        <span class="subtitle">Key Outcomes of the interview</span>
+                        <p>
+                            Based on the interview, as a transcriptionist and aspiring Technical Support Specialist, I’ve learnt that you don’t need to have a high degree or countless certifications to reach Janesh Raghwani’s position as Solution Architect. What’s crucial is that you continue to read and learn more about your profession to update yourself on the trends of IT. This allows you to constantly evolve as the IT world evolves too.  
+                        </p>
+                        
+                                               
+
+                        
+                          
+                    </div>
+                </section>
+
+            
+                
+                
+ 
+ 
+            </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

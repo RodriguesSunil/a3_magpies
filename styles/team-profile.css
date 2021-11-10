@@ -1,0 +1,32 @@
+page-root .team-profile {
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+page-root .team-profile:last-child { margin-top: 0; }
+
+    page-root .team-profile .profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.2em;
+        padding: 1.2em;
+        margin-bottom: 2.5em;
+    }
+    page-root .team-profile .profile:last-child { margin-bottom: 0; }
+        page-root .team-profile .profile .image-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            page-root .team-profile .profile .image-container img {
+                height: 280px;
+                border-radius: 14px;
+            }
+        page-root .team-profile .profile .content-container {
+            padding: 1em;
+            font-size: 16px;
+            max-width: 70%;
+            line-height: 28px;
+        } 

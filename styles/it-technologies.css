@@ -1,0 +1,60 @@
+page-root .page-content {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+page-root section {
+    display: flex;
+    flex-direction: column;
+    border: var(--panel-default-border);
+    border-radius: 8px;
+    background-color: var(--panel-color);
+    padding: 1.8em 2em;
+    margin-bottom: 1em;
+}
+    page-root section h1 {
+        margin: 0; padding: 0;
+        padding-bottom: 0.4em;
+        margin-bottom: 1em;
+        border-bottom: var(--panel-default-border);
+        text-transform: uppercase;
+    }
+    page-root section .img-full {
+        width: 100%;
+        text-align: center;
+    }
+        page-root section img {
+            border-radius: 8px;
+        }
+    page-root section .content {
+        width: 100%;
+    }
+        page-root section .content span.subtitle {
+            font-weight: 800;
+            font-size: 18.5px;
+            display: block;
+            margin-top: 0;
+            margin-bottom: -14px;
+        }
+        page-root section .content p {
+            line-height: calc(1em + 12px);
+        }
+        page-root section .content h2 {
+            margin: 0; padding: 0;
+            margin-top: 1.6em;
+            margin-bottom: 0.4em;
+            color: var(--primary-color);
+        }
+        page-root section .content hr {
+            margin: 1.5em 0 3em 0;
+            outline: none; border: none;
+            border: var(--panel-default-border);
+            opacity: 0.4;
+        }
+
+    
+        page-root section .content ul li{
+            padding-right: 1.4em;
+            margin-bottom: 0.5em;
+        }

@@ -1,0 +1,11 @@
+Project References
+
+    > Google Fonts
+        -   'Rubik' type font provided by Google Fonts
+            *needs reference* => search rubik to get link and licence
+
+        -   'Material Icons' icon svg files by Google Fonts
+            *licence path same as above*
+
+    > Others
+        -   none

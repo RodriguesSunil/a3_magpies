@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/tools.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Tools | The Magpies [A2 Group 10]</title>
+</head>
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('ideal-jobs')">Ideal Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
+                        <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
+                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
+                        <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+           <page-root>
+
+               <div class="hero-2">
+                    <div>
+                        <h1>Tools Used</h1>
+                    </div>
+                    <div style="display:flex; justify-content:center;">
+                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                    </div>
+                </div>
+
+                <div class="page-content">
+
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="assets/tools/GitHub_Magpies.png" alt="img">
+                            <a
+                            href="https://github.com/RodriguesSunil/Magpies"
+                            title="GitHub Repo Magpies"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Github Repository - Magpies </a>
+                        </div>
+                        <div class="content-container">
+                            <h1>GitHub</h1>
+                            <p>
+                                We started the group communications using a GitHub repository. Our group was called Magpies. Our initial documents were stored here whilst Microsoft Teams was being setup. As we had members from different time zones the Readme file was a good way for us to show who and what location they reside in. The Blue White and Black Magpie became our logo and we have used the colours in our website. The group contributed using GitHub for changes using the push and pull requests.
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="assets/tools/ms-teams-logo.svg" alt="img">
+                            <a
+                            href="https://github.com/RodriguesSunil/Magpies"
+                            title="Microsoft Teams"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Microsoft Teams - Magpies </a>
+                        </div>
+                        <div class="content-container">
+                            <h1>Microsoft Teams</h1>
+                            <p>
+                                Microsoft Teams was the tool chosen by the group as our repository for storage of documents, booking meetings, and chat amongst the group members. It also served as a calendar for reminders. Meetings were organised through Teams and each meeting had a designated person for taking minutes. The meetings were recorded so we could go back to them to view and listen to what we discussed. Minutes of the meetings are taken by a team member and posted to the folder in Teams. Teams served the group as a collaboration tool to discuss issues and get peer reviews of the work assigned.
+                            </p>
+                            <p>
+                                You can find our Microsoft Team at 
+                                <a
+                                    href="https://teams.microsoft.com/_#/school/files/General?threadId=19%3AWH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1%40thread.tacv2&ctx=channel&context=General&rootfolder=%252Fsites%252FGroup10945%252FShared%2520Documents%252FGeneral"
+                                    title="Magpies - Microsoft Teams"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >this link</a>.
+                            </p> 
+                            <p>
+                                If you need access to join our Team you can request the Team Owner for access by clicking <a href="https://teams.microsoft.com/l/channel/19%3aWH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1%40thread.tacv2/General?groupId=a02124aa-2802-424e-9924-b09bc9b11669&tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b" title="Request Access"
+                                target="_blank"
+                                rel="noopener noreferrer" 
+                                >Request Access</a>
+                            </p>
+                            <p>
+                                Meetings had minutes recorded and actions assigned. Teams chat was used also as a reminder for actions. Below are the links to the meeting minutes:
+                                <ol>
+                                    <li>
+                                        30/09/21 <a href= "https://teams.microsoft.com/l/file/ACE12CF6-8DFB-49BB-A3A0-7A02F448AA43?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F30092021%20Meeting%20Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Agenda"
+                                            target="_blank"
+                                            rel="noopener noreferrer" 
+                                        >Agenda</a> 
+                                        <a href= "https://rmiteduau.sharepoint.com/sites/Group10945/Shared Documents/General/Recordings/Meeting in _General_-20210930_174036-Meeting Recording.mp4"title="Recording"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Recording</a>
+                                        <a href= "https://teams.microsoft.com/l/file/ACE12CF6-8DFB-49BB-A3A0-7A02F448AA43?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F30092021%20Meeting%20Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Actions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        > Actions</a>
+                                    </li>
+                                    <li>
+                                        04/10/21 <a href= "https://teams.microsoft.com/l/file/89965F12-717B-4EDC-9297-BDCA0C2D6BE9?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F04102021%20Meeting%20Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Agenda"
+                                            target="_blank"
+                                            rel="noopener noreferrer" 
+                                        >Agenda</a> 
+                                        <a href= "https://rmiteduau.sharepoint.com/sites/Group10945/Shared Documents/General/Recordings/20211004_Meeting Recording.mp4"title="Recording"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Recording</a>
+                                        <a href= "https://teams.microsoft.com/l/file/89965F12-717B-4EDC-9297-BDCA0C2D6BE9?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F04102021%20Meeting%20Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Actions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        > Actions</a>
+                                    </li>
+                                    <li>
+                                        07/10/21 <a href= "https://teams.microsoft.com/l/file/1F6EB679-4B1F-49B3-BC7E-1634B1D5A71A?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F07102021_Meeting_Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Agenda"
+                                            target="_blank"
+                                            rel="noopener noreferrer" 
+                                        >Agenda</a> 
+                                        <a href= "https://rmiteduau.sharepoint.com/sites/Group10945/Shared%20Documents/General/Recordings/20211007_Meeting%20Recording.mp4"title="Recording"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Recording</a><a href= "https://teams.microsoft.com/l/file/1F6EB679-4B1F-49B3-BC7E-1634B1D5A71A?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F07102021_Meeting_Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Actions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        > Actions</a>
+                                    </li>
+                                    <li>
+                                        11/10/21 <a href= "https://teams.microsoft.com/l/file/3B70056C-677F-4049-96FB-DC6A8DDABB7A?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F11102021_Meeting_Minutes.pdf.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Agenda"
+                                            target="_blank"
+                                            rel="noopener noreferrer" 
+                                        >Agenda</a> 
+                                        <a href= "https://rmiteduau.sharepoint.com/sites/Group10945/Shared Documents/General/Recordings/20211011_Meeting Recording.mp4"title="Recording"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Recording</a>
+                                        <a href= "https://teams.microsoft.com/l/file/3B70056C-677F-4049-96FB-DC6A8DDABB7A?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F11102021_Meeting_Minutes.pdf.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Actions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        > Actions</a>
+                                    </li>
+                                    <li>
+                                        14/10/21 <a href= "https://teams.microsoft.com/l/file/6BFAC18C-8126-4626-84EE-F07C5C5E3EB3?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F14102021_Meeting_Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Agenda"
+                                            target="_blank"
+                                            rel="noopener noreferrer" 
+                                        >Agenda</a> 
+                                        <a href= "https://rmiteduau.sharepoint.com/sites/Group10945/Shared Documents/General/Recordings/Team Meeting-20211014_173608-Meeting Recording.mp4"title="Recording"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Recording</a>
+                                        <a href= "https://teams.microsoft.com/l/file/6BFAC18C-8126-4626-84EE-F07C5C5E3EB3?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FMeeting%20Minutes%2F14102021_Meeting_Minutes.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"title="Actions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        > Actions</a>
+                                    </li>
+                                </ol>
+
+                            </p>
+                            <p>
+                                The meeting recordings for each of the meetings is available below:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card thumbnail-collection">
+                
+                        
+                        <div class="thumbnail">
+                            <!-- 210930 -->
+                            <a  href="https://rmiteduau.sharepoint.com/:v:/s/Group10945/EeVFoKTUgNlKpnFQ_HlwIGgBaO2hWzlJxTuADQ5c41DnCw?e=3l1cj1"
+                                title="Open recording in new tab" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/tools/thumbnail_baseplate.png" alt="meeting-thumbnail" width="400" >
+                                <div class="title">
+                                    <span>Meeting 1</span>
+                                </div>
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,14.67V9.33c0-0.79,0.88-1.27,1.54-0.84 l4.15,2.67c0.61,0.39,0.61,1.29,0,1.68l-4.15,2.67C10.38,15.94,9.5,15.46,9.5,14.67z"/></g></svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="thumbnail">
+                            <!-- 211004 -->
+                            <a  href="https://rmiteduau.sharepoint.com/:v:/s/Group10945/ETSGMNBv1u1JgXdVrztbw9AB7SqtPm06wh0u2884rWG4_w?e=2T64qe"
+                                title="Open recording in new tab" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/tools/thumbnail_baseplate.png" alt="meeting-thumbnail" width="400" >
+                                <div class="title">
+                                    <span>Meeting 2</span>
+                                </div>
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,14.67V9.33c0-0.79,0.88-1.27,1.54-0.84 l4.15,2.67c0.61,0.39,0.61,1.29,0,1.68l-4.15,2.67C10.38,15.94,9.5,15.46,9.5,14.67z"/></g></svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="thumbnail">
+                            <!-- 211007 -->
+                            <a  href="https://rmiteduau.sharepoint.com/:v:/s/Group10945/EQOHIrLzwgtEurcS8pRyuU4BfuxxFZ3kcPO01Xfd5cJUMg?e=YirRjj"
+                                title="Open recording in new tab" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/tools/thumbnail_baseplate.png" alt="meeting-thumbnail" width="400" >
+                                <div class="title">
+                                    <span>Meeting 3</span>
+                                </div>
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,14.67V9.33c0-0.79,0.88-1.27,1.54-0.84 l4.15,2.67c0.61,0.39,0.61,1.29,0,1.68l-4.15,2.67C10.38,15.94,9.5,15.46,9.5,14.67z"/></g></svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="thumbnail">
+                            <!-- 211011 -->
+                            <a  href="https://rmiteduau.sharepoint.com/:v:/s/Group10945/EWGwyRj_NOtIvWG4nHuBLqUBU-xQSuBNsPJmAel0l8sigQ?e=u5O9aD"
+                                title="Open recording in new tab" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/tools/thumbnail_baseplate.png" alt="meeting-thumbnail" width="400" >
+                                <div class="title">
+                                    <span>Meeting 4</span>
+                                </div>
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,14.67V9.33c0-0.79,0.88-1.27,1.54-0.84 l4.15,2.67c0.61,0.39,0.61,1.29,0,1.68l-4.15,2.67C10.38,15.94,9.5,15.46,9.5,14.67z"/></g></svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="thumbnail">
+                            <!-- 211014 -->
+                            <a  href="https://rmiteduau.sharepoint.com/:v:/s/Group10945/ETFvo9nUUH9BqE5i9CUjG_cBf4jB7dDsAt1DWGIWc4rEKg?e=S9xuUa"
+                                title="Open recording in new tab" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/tools/thumbnail_baseplate.png" alt="meeting-thumbnail" width="400" >
+                                <div class="title">
+                                    <span>Meeting 5</span>
+                                </div>
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,14.67V9.33c0-0.79,0.88-1.27,1.54-0.84 l4.15,2.67c0.61,0.39,0.61,1.29,0,1.68l-4.15,2.67C10.38,15.94,9.5,15.46,9.5,14.67z"/></g></svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="thumbnail">
+                            <!-- resource not added -->
+                            <a  href="https://rmiteduau.sharepoint.com/:v:/s/Group10945/ERbM7NEN3slIvggxhzyhix0Bs67vWAEOJvzemhMwmAUwtg?e=IhIuMg"
+                                title="Open recording in new tab" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/tools/thumbnail_baseplate.png" alt="meeting-thumbnail" width="400" >
+                                <div class="title">
+                                    <span>Meeting 6</span>
+                                </div>
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,14.67V9.33c0-0.79,0.88-1.27,1.54-0.84 l4.15,2.67c0.61,0.39,0.61,1.29,0,1.68l-4.15,2.67C10.38,15.94,9.5,15.46,9.5,14.67z"/></g></svg>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

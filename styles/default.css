@@ -1,0 +1,507 @@
+/* elements.css - defines custom html elements */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --body-color: #fbfbfb;
+  --header-background-color: #fffd;
+  /* must be somewhat transparent */
+  --body-scroll-track-color: #f2f2f2;
+  /* unused var */
+  --body-scroll-thumb-color: #bbb;
+  --body-scroll-thumb-color-2: #aaa;
+  --panel-font-color: #444;
+  --panel-color: #fff;
+  --panel-default-border: 1px solid #aaa4;
+  --btn-hov-color: #aaa1;
+  --btn-foc-color: #008cff66;
+  --btn-foc-color-bg: #008cff18;
+  --primary-color: #267ea7;
+  --text-on-primary: #fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--body-color, #fbfbfb);
+  color: var(--panel-font-color, #444);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  /* background: var(--body-scroll-track-color, #f2f2f2);
+        border-left: var(--panel-default-border, 1px solid #aaa4); */
+  background-color: var(--body-color, #fff);
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 100px;
+  background-color: var(--body-scroll-thumb-color, #bbb);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  border: 3px solid transparent;
+  background-color: var(--body-scroll-thumb-color-2, #aaa);
+}
+
+::-moz-selection {
+  background-color: var(--primary-color, #3453ff);
+  color: var(--text-on-primary, #fff);
+}
+
+::selection {
+  background-color: var(--primary-color, #3453ff);
+  color: var(--text-on-primary, #fff);
+}
+
+::-moz-selection {
+  background-color: var(--primary-color, #3453ff);
+  color: var(--text-on-primary, #fff);
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+app-container {
+  /* positions the viewport */
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+app-header {
+  /* defines a traditional bar header at the top of the page */
+  /* REQUIRES: 'app-container' to have 'display:flex' and 'flex-direction:column' */
+  width: 100%;
+  height: 75px;
+  background-color: var(--panel-color, #fff);
+  border-bottom: var(--panel-default-border, 1px solid #aaa4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 5;
+  position: fixed;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: var(--header-background-color, #fffd);
+  -webkit-transition: height 200ms ease, padding 200ms ease;
+  transition: height 200ms ease, padding 200ms ease;
+}
+
+app-header .left {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+  -webkit-transition: padding 200ms ease;
+  transition: padding 200ms ease;
+}
+
+app-header header-nav {
+  /* REQUIRES: <button> tag must be used to wrap all child elements to enable browser functionality */
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+app-header header-nav button.icon {
+  border: 2.2px solid transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--panel-font-color, #444);
+  cursor: pointer;
+  -webkit-transition: background 150ms ease, border 140ms ease;
+  transition: background 150ms ease, border 140ms ease;
+}
+
+app-header header-nav button.icon:hover {
+  border-color: var(--btn-hov-color, #aaa1);
+}
+
+app-header header-nav button.icon:focus {
+  background-color: var(--btn-foc-color-bg, #008cff18);
+  border-color: var(--btn-foc-color, #008cff66);
+}
+
+app-header header-nav button.icon svg, app-header header-nav button.icon img {
+  /* works with both svg and png icons */
+  width: 24px;
+  height: 24px;
+}
+
+app-header header-nav nav-container {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 10;
+  padding: 1em;
+  width: 280px;
+  background-color: var(--panel-color, #fff);
+  border: var(--panel-default-border);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px #4441;
+          box-shadow: 0 0 15px #4441;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: translateX(-120%) scale(0.5);
+          transform: translateX(-120%) scale(0.5);
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease, -webkit-transform 300ms ease;
+  transition: opacity 400ms ease, -webkit-transform 300ms ease;
+  transition: opacity 400ms ease, transform 300ms ease;
+  transition: opacity 400ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+app-header header-nav nav-container button.nav-link {
+  border: 2.2px solid transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--panel-font-color, #444);
+  cursor: pointer;
+  padding: 0 0.75em;
+  margin-bottom: 1.5px;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-transition: background 150ms ease, border 140ms ease;
+  transition: background 150ms ease, border 140ms ease;
+}
+
+app-header header-nav nav-container button.nav-link:hover {
+  border-color: var(--btn-hov-color, #aaa1);
+}
+
+app-header header-nav nav-container button.nav-link:focus {
+  background-color: var(--btn-foc-color-bg, #008cff18);
+  border-color: var(--btn-foc-color, #008cff66);
+}
+
+app-header header-nav nav-container button.nav-link:last-child {
+  margin-bottom: 0;
+}
+
+app-header .right {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+app-header .team-name {
+  width: 180px;
+  height: 100%;
+  background-color: var(--primary-color, #616161);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 1em;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--text-on-primary, #fff);
+  cursor: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: padding 200ms ease, width 250ms ease, font-size 200ms ease;
+  transition: padding 200ms ease, width 250ms ease, font-size 200ms ease;
+}
+
+app-header .team-name .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1em;
+  -webkit-transition: margin 200ms ease;
+  transition: margin 200ms ease;
+}
+
+app-header .team-name .contacts .icon {
+  width: 34px;
+  height: 34px;
+  background-color: #eee;
+  border: 1px solid #aaa4;
+  border-radius: 100px;
+  position: relative;
+  margin-right: -10px;
+  cursor: pointer;
+  -webkit-transition: margin-right 200ms ease, width 200ms ease, height 200ms ease, opacity 100ms ease;
+  transition: margin-right 200ms ease, width 200ms ease, height 200ms ease, opacity 100ms ease;
+}
+
+app-header .team-name .contacts .icon:last-child {
+  margin-right: 0;
+}
+
+app-header .team-name .contacts .icon:hover .tooltip, app-header .team-name .contacts .icon img:hover .tooltip {
+  -webkit-transform: translateX(-50%) scale(1);
+          transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+app-header .team-name .contacts .icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 100px;
+}
+
+app-header .team-name .contacts .icon .tooltip {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: auto;
+  white-space: nowrap;
+  padding: 4px 7px;
+  background-color: var(--panel-color, #fff);
+  color: var(--panel-font-color, #444);
+  border: var(--panel-default-border, 1px solid #aaa4);
+  border-radius: 6px;
+  font-family: 'Rubik', 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  -webkit-transform: translateX(-50%) scale(0);
+          transform: translateX(-50%) scale(0);
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: opacity 200ms ease, transform 200ms ease;
+  transition: opacity 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
+  z-index: 5;
+  cursor: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+app-header .team-name .contacts .icon .tooltip .arrow {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  height: 7px;
+  overflow: hidden;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  padding: 2px;
+  z-index: 99;
+}
+
+app-header .team-name .contacts .icon .tooltip .arrow::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--panel-color, #fff);
+  border: var(--panel-default-border, 1px solid #aaa4);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+app-header .team-name .contacts:hover .icon {
+  margin-right: -4px;
+}
+
+app-header .team-name .contacts:hover .icon:last-child {
+  margin-right: 0;
+}
+
+app-header .team-name::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: calc(100% - 50px);
+  -webkit-transform: skewX(40deg);
+          transform: skewX(40deg);
+  width: 100px;
+  height: 100%;
+  background-color: var(--primary-color, #616161);
+  z-index: -1;
+}
+
+.primary-color {
+  color: var(--primary-color, #008cff);
+}
+
+app-page-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: top 120ms ease;
+  transition: top 120ms ease;
+}
+
+app-page-container page-root {
+  width: 1300px;
+  padding: 0 1.5em;
+}
+
+app-page-container page-root .hero {
+  height: calc(100vh - 75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+app-page-container page-root .hero h1 {
+  padding: 0;
+  margin: 0;
+  margin-left: 85px;
+  font-size: 85px;
+  font-weight: 700;
+}
+
+app-page-container page-root .hero .noninteractive-prompt {
+  display: inline-block;
+  padding: 0.5em 6px;
+  border-bottom: 3px solid transparent;
+  margin-top: 75px;
+  margin-left: 85px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: border 150ms ease;
+  transition: border 150ms ease;
+}
+
+app-page-container page-root .hero .noninteractive-prompt:hover {
+  border-bottom-color: var(--primary-color, #008cff);
+}
+
+app-page-container page-root .hero .side-img {
+  margin-right: 85px;
+}
+
+app-page-container page-root .hero .side-img img {
+  width: 450px;
+}
+
+app-page-container page-root .hero-2 {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: var(--panel-default-border, 1px solid #aaa4);
+  margin-bottom: 80px;
+}
+
+app-page-container page-root .hero-2 h1 {
+  padding: 0;
+  margin: 0;
+  margin-left: 50px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+app-page-container page-root .hero-2 .side-img {
+  margin-right: 50px;
+}
+
+app-page-container page-root .hero-2 .side-img img {
+  width: 120px;
+}
+
+app-page-container page-root a {
+  color: var(--primary-color, #616161);
+  text-decoration: inherit;
+  font-weight: 500;
+  font-size: inherit;
+}
+
+app-page-container page-root a:hover {
+  text-decoration: underline;
+  background-color: var(--panel-color, #fff);
+}
+/*# sourceMappingURL=default.css.map */
