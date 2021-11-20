@@ -103,10 +103,10 @@ function navigateLocal(url) {
         }
     } else {
         if (url == 'root') {
-            location.href = "https:\/\/rodriguessunil.github.io/Magpies/";
+            location.href = "https:\/\/rodriguessunil.github.io/a3_magpies/";
             return;
         } else if (url) {
-            location.href = "https:\/\/rodriguessunil.github.io/Magpies/" + url;
+            location.href = "https:\/\/rodriguessunil.github.io/a3_magpies/" + url;
             return;
         } else {
             console.error('WARNING: Navigate was called without any arguments.');
