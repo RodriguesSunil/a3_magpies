@@ -9,7 +9,7 @@
     <!-- page specific css file -->
     <link rel="stylesheet" href="styles/team-profile.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>The Team | The Magpies [A3 Group 10]</title>
+    <title>Team Profile | The Magpies [A3 Group 10]</title>
 </head>
 <body>
     <app-container>
@@ -20,7 +20,7 @@
                     <nav-container>
                         <button class="nav-link" onclick="navigateLocal('root')">Home</button>
                         <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
-                        <button class="nav-link" onclick="navigateLocal('ideal-jobs')">Ideal Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('career-plans')">Career Plans</button>
                         <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
                         <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
                         <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
@@ -59,20 +59,31 @@
             </div>
         </app-header>
         <app-page-container>
-           <page-root>
+            <page-root>
 
                <div class="hero-2">
                     <div>
-                        <h1>The Team</h1>
+                        <h1>Team Profile</h1>
                     </div>
                     <div style="display:flex; justify-content:center;">
                         <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
                     </div>
                 </div>
 
-                <div class="team-profile">
+                <div class="page-contents-container" style="margin-top: -40px;">
+                    <div>
+                        <span class="title">Contents</span>
+                        <div class="page-contents">
+                            <a href="#team-profile"><button>Personal Information</button></a>
+                            <a href="#group-processes"><button>Group Processes</button></a>
+                            <a href="#career-plans"><button>Career Plans</button></a>
+                        </div>
+                    </div>
+                </div>
 
-                    <h1>Who We Are?</h1>
+                <div class="team-profile" id="team-profile">
+
+                    <h1>Personal Information</h1>
 
                     <div class="profile">
                         <div class="image-container">
@@ -168,6 +179,275 @@
                         </div>
                     </div> 
 
+                </div>
+
+                <div class="team-profile" id="group-processes">
+                    <h1>Group Processes</h1>
+
+                    <p>
+                        The Magpies group worked quite well in Assignment 2 coordinating the tasks 
+                        amongst the group. We used Microsoft Teams as the main platform for 
+                        conversations, chat between the members and as our storage repository for the 
+                        documents we produced. It was a great tool to host meetings and make recordings 
+                        so we could play it back later to check on what the conversations and action items 
+                        were. We used the Canvas email inbox rarely at times. This was used mainly to 
+                        communicate to the group just as a backup to ensure that every team member of the 
+                        Magpies group got the message across to them.
+                    </p>
+                    <p>
+                        GitHub Repository was used to store the documents and media items that were used 
+                        for the website. The website was created using Visual Studio Code linked to GitHub 
+                        Desktop. The members of the group were granted contributor access so that each 
+                        member of the group had access to view and update code. This process worked 
+                        quite well given we had the team spread across Australia in different time zones. 
+                        Due to timing and access to team members, Word was used by the team to draft the 
+                        deliverables for the website and later entered in GitHub.
+                    </p>
+                    <p>
+                        Our assignment 2 journey was a bit rocky at the start with the formation of the group 
+                        taking a bit longer. This was due to initial communications and not having clear idea 
+                        of who we would get to form the team. Once the team was decided and we had a 
+                        view of who was in, a Microsoft Teams group was created and that made us more 
+                        connected with each other. Unfortunately, one of the team members pulled out of 
+                        the course towards the end and we had to quickly reformat the tasks assigned to 
+                        ensure the assignment was completed by the deadline. Once we had official 
+                        confirmation of the member was out of the course, the team took on extra tasks to 
+                        ensure that this did not compromise to the assignment deadlines.
+                    </p>
+                    <p>
+                        As Assignment 3 used the same group as before, we were pretty much clear on what 
+                        we had to do. We had learnt from the past to what skills the team had and how we 
+                        could ensure this assignment needed to be done. Feedback received from the tutors 
+                        helped us investigate items that required improvements. Due to the resource issue, 
+                        we had in last assignment, we did a planning run early in the assignment to divide 
+                        the workload amongst the group with the provision that there was help within the 
+                        group if any individual was struggling. 
+                        A Project plan has been created detailing the tasks that needed to be done. Two
+                        meetings are held weekly to report progress and identify any shortfalls. Meeting 
+                        minutes are stored on Teams for review on actions. Meetings notes, agendas and 
+                        the project plan help us to keep the assignment work on track. Due to 3 
+                        assignments due at the same time, it is critical for the group to keep track of what is 
+                        complete and what needs focus.
+                    </p>
+                 
+                </div>
+
+                <div class="team-profile" id="career-plans">
+                    <h1>Career Plans</h1>
+
+                    <p>
+                        During the assignment 2, the team compared their ideal jobs that they picked against 
+                        Burning Glass data from 2018 advertised positions. Software Developer was the 
+                        most advertised position in that period. From this review and when asked if any team 
+                        member would consider updating their ideal job, Alex Hutton decided to broaden his 
+                        ideal job to include Software Developer as this was in high demand and gave more 
+                        prospects.
+                        The key positions that the team were looking for were as follows:
+                    </p>
+                    <ul>
+                        <li>
+                            Software Developer – <i>design, run and test computer applications.</i>
+                        </li>
+                        <li>
+                            IT Support Specialist – <i>assist computer and organisations are running optimal.</i>
+                        </li>
+                        <li>
+                            App Developer - <i>design, run and test computer applications.</i>
+                        </li>
+                        <li>
+                            Data Analyst – <i>define, design and slice and dice data to identify improvements.</i>
+                        </li>
+                    </ul>
+                    <p>
+                        Comparing the learning styles to the types of jobs that the group selected, it can be 
+                        noted that the positions were mainly in the Visual and Auditory type of style. The 
+                        kinesthetics style was not prevalent in the jobs that were chosen by the group.
+                    </p>
+
+                    <table style="width:100%">
+                        <tr>
+                          <th>Learning Style</th>
+                          <th>Description</th> 
+                          <th>Team Ideal Job</th>
+                        </tr>
+                        <tr>
+                          <td>VISUAL</td>
+                          <td>Use images drawn on whiteboards, charts graphs, diagrams, and process flows </td>
+                          <td>Software Developer <br>App Developer<br>Data Analyst</td>
+                        </tr>
+                        <tr>
+                          <td>AUDITORY</td>
+                          <td>Use oral presentations, verbal directions and follow processes by repetitive listening to recordings</td>
+                          <td>IS Support Specialist</td>
+                        </tr>
+                        <tr>
+                          <td>KINESTHETIC</td>
+                          <td>Use experience and hands on knowledge to get things done</td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    <p>
+                        Information Technology requires people to have a good understanding of all the 
+                        various processes and technologies that exist in the market. They need not be a 
+                        master in all but need to have a good understanding of them whilst having a very
+                        sound working knowledge of the ones that they use in their day to day working life. 
+                        Having compared the ideal jobs that the Magpies team selected, there are quite a 
+                        few similarities within the job requirements that those positions require. The skills in 
+                        blue highlight are those that are common to all 3 positions within the group.
+                    </p>
+
+                    <table style="width:100%">
+                        <tr>
+                            <th>Skill Requirements</th>
+                            <th>Software Developer</th>
+                            <th>Application Developer</th>
+                            <th>IT Support Specialist</th>
+                            <th>Data Analyst</th>
+                        </tr>
+                        <tr>
+                            <td>Experience in .NET technologies</td>
+                            <td>YES</td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>Experience in Front End Web Design technologies</td>
+                            <td>YES</td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>Experience in Mobile Technologies </td>
+                            <td>YES</td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#b9dbf7;">Experience in Data Storage (SQL)</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES </td>
+                        </tr>
+                        <tr>
+                            <td>Server and Network Backup and security systems</td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>YES</td>
+                            <td>YES </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#b9dbf7;">Experience in Cloud Computing Platforms</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES </td>
+                        </tr>
+                        <tr>
+                            <td>Experience in Agile Development Team</td>
+                            <td>YES</td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>YES </td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Windows and Server Roles, Network Policy & Access Services</td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>YES</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#b9dbf7;">Windows Power Shell Scripts</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#b9dbf7;">Commercial experience</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#b9dbf7;">Networking Technologies</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#b9dbf7;">Microsoft Desktop Operating Systems and Applications</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                            <td style="background-color:#b9dbf7;">YES</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft O365 Admin, Exchange Online, SharePoint, Teams & OneDrive</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>YES</td>
+                            <td>YES </td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Certified Associate, Expert or MCSE</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>YES</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>Experience with jQuery, jQueryUI and writing custom plugins</td>
+                            <td> </td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>Experience with ReactJS, Angular JS and coding patterns</td>
+                            <td> </td>
+                            <td>YES</td>
+                            <td> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>Data & analytics technical knowledge (ETLs, QlikSense, Alteryx, Python)</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>Experience in data analytics, deep dive, dashboards & Bus Intelligence</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>YES </td>
+                        </tr>
+                        
+                        </tr>
+                    </table>
+                    <p>
+                        Having an overlap of skills within the group is important for good decision making and challenging the thinking and innovation ideas. This helps in times when key people are not available. 
+                    </p>
+                    <p>
+                        We have put the 4 key ideal jobs for our group and below are the comparison results. 
+                        The salary component is directly related with the qualifications (% with college 
+                        degrees) required for each of the positions. Web developers and Software 
+                        developers are more creative but tend to have a low score on the social aspect of 
+                        things. Overall the growth prospects look great for these 2 careers.
+                    </p>
+                    <centre>
+                        <img src="assets/team-profile/compare.png" alt="compare">
+                    </centre>
+
+                    <!-- ^^^^^^^^^  CAREER PLANS CONTENT GOES ABOVE -->
                 </div>
 
 

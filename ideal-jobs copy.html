@@ -1,3 +1,6 @@
+<!-- backup -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +10,9 @@
 
     <link rel="stylesheet" href="styles/default.css">
     <!-- page specific css file -->
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/ideal-jobs.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>Home | The Magpies [A3 Group 10]</title>
+    <title>Ideal Jobs | The Magpies [A3 Group 10]</title>
 </head>
 <body>
     <app-container>
@@ -24,7 +27,7 @@
                         <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
                         <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
                         <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
-                        <button class="nav-link" onclick="navigateLocal('project_description')">Project Description</button>
+                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
                         <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
                         <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
                     </nav-container>
@@ -60,59 +63,38 @@
         </app-header>
         <app-page-container>
            <page-root>
-
-               <div class="hero">
+                <div class="hero-2">
                     <div>
-                        <h1>Magpie</h1>
-                        <h1 class="primary-color" style="margin-top: -12px;">Medical</h1>
-                        <a href="#project-blurb">
-                            <span class="noninteractive-prompt">About the Project &nbsp;&gt;</span>
-                        </a>
+                        <h1>Ideal Jobs</h1>
                     </div>
                     <div style="display:flex; justify-content:center;">
-                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="450px" style="transform:scaleX(-1);">
+                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
                     </div>
                 </div>
 
-                <div style="display:flex; flex-direction:column; align-items: center; padding-bottom: 2.2em;">
-                    <div style="max-width: 650px;">
-    
-                        <p id="project-blurb" style="
-                            font-size: 23px;
-                        ">
-                            The Magpies team are young energetic team of IT Students who have embarked on 
-                            a new and innovative project to build an application that will create and improve the 
-                            way medical appointments are organised
-                        </p>
-    
-                        <p>
-                            The application, <b>Magpie Medical&#174</b> is in design stage and will be available towards the end of Q1-2022 on Andriod and IOS Mobiles. It is a 
-                            secure application using a login and password to authenticate. It will connect to wearable devices such as 
-                            Samsung Galaxy Watch and Apple Watch to report blood pressure, 
-                            heart rate, ECG etc. for the General Practitioner to understand the 
-                            key vitals for their patients. It will connect to smart scales to record 
-                            weight, BMI and body trends. The app will store your appointments 
-                            and allow you to track back the visits made to doctors. It will store 
-                            your prescriptions and send them to the pharmacy of choice to 
-                            dispense medicines as recommended.
-                        </p>
-                        <p>
-                            This application will reduce the time spent on waiting at doctor’s
-                            dispensary and give the general practitioners more time to view 
-                            patients from the comfort of their homes.
-                        </p>
-                        <p>
-                            As emergency and GP after-hours struggle to accommodate the patients during 
-                            winter times due to the flu season, this product will play a key part in ensuring 
-                            medical attention is available for people that are in need. It will also become popular 
-                            when cities are in lockdown and travelling to see a GP needs to be avoided.
-                        </p>
-    
+                <div class="page-content">
+
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="assets/ideal-jobs/chart-1.png" width="300" alt="chart of ideal jobs">
+                        </div>
+                        <div class="content-container">
+                            <h1>Ideal Jobs</h1>
+                            <p>
+                                At this stage, most of the Team members, have already thought about the next Paths to take and a certain idea of the field they want to fit in when they achieve sufficient skills. The Ideal Job is in some ways a reflection of the results taken when we have done the profile tests in the last assignment. Some of us want to keep in the same field but also articulate more skills to fit in the market and on the other hand, some are just starting a new career and challenging ourselves when changing drastically the actual field.<br>
+                                There are also some overlaps between team members that were good for the development of this assignment.
+                            </p>
+                            <p>
+                                Sunil Rodrigues is looking for an upskill for the market he is already in. A Data analyst job is ideal in the mining field as he has vast knowledge in it and wants to solve problems that he sees daily.<br>
+                                Jacqueline Penas wants to help others in the IT Support Specialist field, her goal is to achieve enough knowledge and be able to assist and lead others in the industry.<br>
+                                Raul, Alexander and Joao are looking for the Development part of the IT industry, with overlapping skills needed like Programming, they are aiming for the creative section of this gigantic world, Alex and Raul are looking for the App field that has grown exponentially for the last decade and Joao is looking for the Software development that has also made an impressive difference for the improves on the technology.
+                            </p>
+                        </div>
                     </div>
+                    
                 </div>
 
 
-            
            </page-root>
         </app-page-container>
     </app-container>
