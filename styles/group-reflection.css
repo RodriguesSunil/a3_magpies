@@ -30,3 +30,68 @@ page-root .team-profile:last-child { margin-top: 0; }
             max-width: 70%;
             line-height: 28px;
         } 
+
+        .page-contents-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+        
+        .page-contents-container .page-contents {
+            max-width: 800px;
+            min-width: 310px;
+            background-color: #fff;
+            border: 1px solid #aaa4;
+            border-radius: 12px;
+            padding: 1.2em;
+        }
+        
+            .page-contents-container .title {
+                display: block;
+                font-size: 12.5px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #4445;
+                margin-bottom: 0.6em;
+                padding-left: 0.9em;
+            }
+        
+            .page-contents button {
+                border: 2.2px solid transparent; outline: none;
+                padding: 0; margin: 0;
+                background: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%; height: 40px;
+                border-radius: 10px;
+                color: var(--panel-font-color, #444);
+                cursor: pointer;
+                padding: 0 0.75em;
+                margin-bottom: 1.5px;
+                font-size: 17px;
+                font-weight: 400;
+                transition: background 150ms ease, border 140ms ease;
+            }
+            .page-contents button:hover {
+                border-color: var(--btn-hov-color, #aaa1);
+            }
+            .page-contents button:focus {
+                background-color: var(--btn-foc-color-bg, #008cff18);
+                border-color: var(--btn-foc-color, #008cff66);
+            }
+            .page-contents button:last-child {
+                margin-bottom: 0;
+            }
+        
+            .page-contents a {
+                color: inherit !important;
+                text-decoration: inherit !important;
+            }
+            table, th, td {
+                border: 2px solid #0a6dbeda;
+                border-collapse: collapse;
+                
+              }

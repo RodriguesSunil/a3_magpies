@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Group Reflection | The Magpies [A3 Group 10]</title>
 </head>
+<a name="Home"></a>
 <body>
     <app-container>
         <app-header>
@@ -20,12 +21,10 @@
                     <nav-container>
                         <button class="nav-link" onclick="navigateLocal('root')">Home</button>
                         <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
-                        <button class="nav-link" onclick="navigateLocal('career-plans')">Career Plans</button>
                         <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
-                        <button class="nav-link" onclick="navigateLocal('industry-data')">Industry Data</button>
-                        <button class="nav-link" onclick="navigateLocal('it-work')">IT Work</button>
-                        <button class="nav-link" onclick="navigateLocal('it-technologies')">IT Technologies</button>
-                        <button class="nav-link" onclick="navigateLocal('project-ideas')">Project Ideas</button>
+                        <button class="nav-link" onclick="navigateLocal('project-description')">Project Description</button>
+                        <button class="nav-link" onclick="navigateLocal('detailed-description')">Detailed Description</button>
+                        <button class="nav-link" onclick="navigateLocal('skills-and-jobs')">Skills and Jobs</button>
                         <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
                     </nav-container>
                 </header-nav>
@@ -61,6 +60,9 @@
         <app-page-container>
            <page-root>
 
+
+            
+
                <div class="hero-2">
                     <div>
                         <h1>Group Reflection</h1>
@@ -70,6 +72,17 @@
                     </div>
                 </div>
 
+                <div class="page-contents-container" style="margin-top: -40px;">
+                    <div>
+                        <span class="title">Contents</span>
+                        <div class="page-contents">
+                            <a href="#individual"><button>Individual Reflection</button></a>
+                            <a href="#magpies-group"><button>Magpies Group Reflection</button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            <div class="individual" id="individual">
                 <div class="team-profile">
 
                     <h1>Invidual Reflection</h1>
@@ -281,9 +294,12 @@
                         </div>
                     </div> 
                 </div>
+
+            <div class="magpies-group" id="magpies-group"></div>
                 <div class="team-profile">
 
                     <h1>Magpies Group Reflection</h1>
+                    <a href="#Home">Back to Top</a>
                     <div class="profile">
                         <div class="content-container">
                             <p>

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/detailed-description.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Detailed Description | The Magpies [A3 Group 10]</title>
+</head>
+<a name="Home"></a>
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('project-description')">Project Description</button>
+                        <button class="nav-link" onclick="navigateLocal('detailed-description')">Detailed Description</button>
+                        <button class="nav-link" onclick="navigateLocal('skills-and-jobs')">Skills and Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+            <page-root>
+
+               <div class="hero-2">
+                    <div>
+                        <h1>Detalied Description</h1>
+                    </div>
+                    <div style="display:flex; justify-content:center;">
+                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                    </div>
+                </div>
+
+                <div class="page-contents-container" style="margin-top: -40px;">
+                    <div>
+                        <span class="title">Contents</span>
+                        <div class="page-contents">
+                            <a href="#aims"><button>Aims</button></a>
+                            <a href="#plans-progress"><button>Plans and Progress</button></a>
+                            <a href="#roles"><button>Roles</button></a>
+                            <a href="#scope-and-limits"><button>Scopes and Limits</button></a>
+                            <a href="#tools-tech"><button>Tools & Technology</button></a>
+                            <a href="#testing"><button>Testing</button></a>
+                            <a href="#timeframe"><button>Timeframe</button></a>
+                            <a href="#risks"><button>Risks</button></a>
+                            <a href="#group-processes"><button>Group Processes and Communications</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aims" id="aims">
+
+                    <h1>Aims</h1>
+                    
+                    <div class="content-container">
+                            
+                        <p>
+                            To utilize the least amount of time within a medical appointment without sacrificing quality by using smart devices to our advantage. Achieving our aim will make doctor’s visits convenient, easy and fast, by giving the doctor/patient more time available to focus on the consult instead of wasting important time on other details.    
+                        </p>
+                        <p>
+                            For us to reach our aim we need to break down a doctor’s appointment in a few steps. From ringing to make an appointment, dislocating to the clinic’s location, waiting to see the doctor, providing physical data like blood pressure, ECG, weight, body mass and gathering history data and information about a patient. Each of these steps consumes time, so we will set our goals to shorten or extinguish the average time to complete these tasks by integrating digital solutions through our mobile phone app.
+                        </p>
+                        
+                            <h3>Goals</h3>
+                            <ul>
+                                <li><b>To eliminate travel and waiting time:</b> by making video and audio appointments available in our app. With this function the patient won’t need to leave their house to have a consultation, saving travel and waiting time also making a doctor’s appointment convenient and easy. The fact that this patient is at home and there’s one less car on the road also helps our planet, reducing our carbon footprint.</li>
+                                <li><b>To be able to send digital prescriptions and referrals:</b> We can add to our app standard prescriptions and referrals that can be sent digitally to the patient or straight to the pharmacy where the patient can then collect. Some people need to make regular appointments just to get prescription medication, for these people having our request referral/prescription function in our app will save them a lot of time.</li> 
+                                <li><b>Using smart devices to do regular physical check-ups:</b> This is a glimpse into the future where IoT devices will be interconnected talking to each other. In our health app, we plan to get any smart devices that collect personal data like digital watches, digital scales and use them towards inputting patients’ data into our appointment. By doing this our health professionals will not need to spend time doing physical check-ups.</li>
+                                <li><b>Having digital patient’s history data available for health professionals:</b> Having all the data, the professional needs right in front of them can help the appointment quality, saving the doctor or front desk from having to call or email other clinics to chase the patient’s medical history.</li>
+                               
+                            </ul> 
+                        <p>      
+                                To identify the most important parts of the project, that will have priority over the others we need to look closely at our aim, which is to consume less time. Considering the biggest chunk of time from a patient’s point of view is wasted in dislocation (in some cases it takes longer to travel to the clinic’s location than the appointment itself) our priority will be setting up video/audio appointments and digital prescriptions/referrals. 
+                        </p>
+
+                        
+
+                        
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                <br><br>
+                <div class="Plans-progress" id="plans-progress">
+
+                    <h1>Plans and Progress</h1>
+                    <a href="#Home">Back to Top</a>
+                    <div class="content-container">
+                            
+                        <p>
+                            The project will design and implement the mobile application described in the project description which in short is an application that will assist with interacting with medical professionals.  To achieve the desired project outcome, the project will need to complete the following tasks:     
+                        </p>
+                        
+                        <h3>1. Create a Figma application prototype</h3>
+                        <p>
+                            The project will build a Figma application prototype showing the screens and options that will be available in the finished product.  This will give the project team, stakeholders, and potential investors a clear understanding of how the product will look and feel.  This is an important step as without the prototype, the product is open to different interpretations from different teams/individuals which can lead to members of the project team working towards slightly different end targets. 
+                            <br>
+                            Using Figma prototypes allows for testing concepts and provides an interactive demonstration of what the application will look and feel like from the UI perspective.[1] 
+
+                        </p>
+                        <p>
+                            The finished product will be a mobile application that will run on Android or iOS. It will integrate with smart watches and smart scales to provide medical staff a clear medical snapshot of the patient to provide proper medical advice and dispense the right medication.
+                        </p>
+
+    
+                    </div>
+
+                    <div class="figma-recording-preview">
+                        <div>
+                            <a href="https://www.figma.com/proto/4YBnWelqC9KxxH9wiNhJFs/Untitled?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2"
+                            title="Click to view recording in new tab" target="_blank" rel="noopener noreferrer">
+                                <div class="thumbnail">
+                                    <img src="assets/project-description/magpie-medical.png" alt="magpie-medical" width="200" style="border-radius:34px;">
+                                    <div class="play-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="22px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,14.67V9.33c0-0.79,0.88-1.27,1.54-0.84 l4.15,2.67c0.61,0.39,0.61,1.29,0,1.68l-4.15,2.67C10.38,15.94,9.5,15.46,9.5,14.67z"/></g></svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>
+                                Access the PDF version of the Magpie Medical application:
+                            <a
+                                href="https://rmiteduau.sharepoint.com/:b:/s/Group10945/Ee0-GmXZIaxKgFnFsa65sRQBJjPB6zOMqF7Buiq_vTzXOQ?e=L5Qimk"
+                                title="Link to Magpie Medical Overview"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span>Magpie Medical<sup>&reg;</sup> Overview Document</span>
+                            </a>
+                        </p>
+                        <br>
+                    </div>
+                    <h3>2. Identify resources and begin sourcing/recruiting</h3>
+                        <p>
+                            The project has identified that it will require: 
+                        </p>
+                        <ul>
+                            <li><b>Network Engineer</b> – The network engineer is required to install and configure the firewalls, routers, and switches.  This should be a highly skilled engineer with extensive experience in all technologies being implemented at the network layer. [2] </li>
+                            <li><b>OpenStack Specialist</b> – OpenStack can be a complicated piece of software to install and configure if you are un-familiar with it.  The project will need to source an experienced OpenStack specialist to provide this service. [2] </li>
+                            <li><b>Senior Storage Engineer</b> – The storage engineer is required to install and configure the storage arrays along with the fibre switches. [2] </li>
+                            <li><b>Hardware installers</b> – These are required to install all the hardware into racks prior to work being commenced on the configuration.  This can be completed by the engineers responsible for the technology being installed, so network equipment by the network engineers, storage and fibre switches by the storage engineer, and a generic level 2 engineer to install the servers. [2] </li>
+                            <li><b>A Flutter developer or MIT App Inventor Specialist</b> – This resource is required to develop the app itself.   [2] </li>
+                            <li><b>Linux Engineer</b> – A Linux engineer is required to configure the Linux operating systems and associated services onto the servers. [2] </li>
+                            <li><b>PHP Developer</b> – The PHP developer is to write the backend code and API for the application to interface with. [2] </li>
+                            <li><b>Database administrator</b> – There will be a huge amount of data stored on the platform over time and as such will need a database administrator with enterprise level experience in design and administration of complex database systems. [2] </li>
+                            <li><b>Security advisor</b> – A security advisor will be required to advise on potential security issues relating to all aspects of the project.  They should not only highlight the possible issues but also determine the best solution to protect against those issues.</li> 
+                         </ul>
+                    <h3>3. Prepare Communications Plan</h3>
+                         <p>
+                            “A project communication plan is an agreement between collaborators and stakeholder that outlines what, when and how information will be shared at key intervals.  Information like status updates, task-related questions, and meeting details should all be included in this written guide.  The goal is to define and streamline team communications as much as possible.” [3] 
+                         </p>
+                         <p>
+                            As per the above description of a project plan, and to ensure good communications and engagement a plan has been created. The communication and engagement plan will raise awareness and understanding of the application, assist with resistance to change, promote utilisation of the app to assist with speed of adoption and encourage dialogue and two way communications between the relevant parties. For the project to be successful, we must achieve the following:
+                         </p>
+                         <ul>
+                            <li>Identify key collaborators/stakeholders in the project both internal and external noting contact details and their location.</li> 
+                            <li>Inform key stakeholders of what is happening, when it is happening, why and how it will affect them and their organisation. </li>
+                            <li>How they can participate in the process and help us improve.</li>
+                            <li>Reach the right people at the right time, in the right way with the right message.</li>
+                            <li>Provide an avenue for questions and feedback.</li>
+
+                         </ul>
+                         <p>
+                             Our communications and engagement methods will be designed on the below plan:
+                         </p>
+                         <br>
+
+                         <table style="width:88%">
+                            <tr>
+                                <th style="background-color:#b9dbf7;">Content</th>
+                                <th style="background-color:#b9dbf7;">Timing</th>
+                                <th style="background-color:#b9dbf7;">What</th>
+                                <th style="background-color:#b9dbf7;">Who</th>
+                                <th style="background-color:#b9dbf7;">Responsibility</th>
+                            </tr>
+                            <tr>
+                                <td>Meetings</td>
+                                <td>Daily</td>
+                                <td>Report on current progress and the next 7-day outlook. Provides a forum for key decisions to be made </td>
+                                <td>Sponsor<br>Steering Committee<br>Project Team<br>Customer Reps</td>
+                                <td>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td>Email Reports</td>
+                                <td>Fortnight</td>
+                                <td>Provides an update to the wider community on what has been completed and expected go live date </td>
+                                <td>Customer Reps<br>Project Team<br>Vendors</td>
+                                <td>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td>Training and Change Management Plan</td>
+                                <td>Monthly</td>
+                                <td>This outlines the training required for customers when it will be available and how long for key positions. Highlight what will change from the current processes </td>
+                                <td>Customer Key Users<br>Medical Staff</td>
+                                <td>Training<br>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td>Pre-Go Live Message</td>
+                                <td>Pre-go live weekend </td>
+                                <td>Announces the go live date to the community detailing what is required to be done on go live, how to contact support if faults noticed and support hotline numbers. </td>
+                                <td>Customer Reps<br>Medical Staff<br>Project Team<brTraining><br>Support Desk</td>
+                                <td>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td>Post Go Live Message</td>
+                                <td>Post go-live </td>
+                                <td>This outlines the training required for customers when it will be available and how long for key positions. Highlight what will change from the current processes </td>
+                                <td>Customer Reps<br>Medical Staff<br>Project Team<brTraining><br>Support Desk</td>
+                                <td>Training<br>Project Manager</td>
+                            </tr>
+                        </table>
+
+                    <h3>4. Prepare data model for the project</h3>
+                         <p>
+                            A data model will be prepared by the DBA, software developers, security advisor and the major stakeholders in the project.  Data models visually present an enterprise’s data elements and how they connect to each other.  Data models support the development of effective information systems and enable business and technical resources to collaborate on how the data will be stored, accessed, shared, updated, and used. [4] 
+                         </p>
+                    
+                    <h3>5. Prepare security audit and requirements</h3>
+                         <p>
+                            Because of the extremely personal nature of the data being stored and the fact that it will be accessed over the internet (although this will be encrypted), the project demands that the data be as secure as possible.  To this end, the security advisor will perform a security audit and assist the implementors to satisfy the security requirements of the platform.
+                         </p>
+                    <h3>6. Prepare network map and identify requirements</h3>
+                         <p>
+                            A network map will be drawn up as part of the project.  This will communicate the infrastructure layout and how it is all connects in a visual presentation which will enable everyone on the project to get a good understanding of how everything fits together.  It will also be a valuable artifact for the support team after the project is complete.  
+                         </p>
+                    
+                    <h3>7. Identify DBA and storage requirements</h3>
+                         <p>
+                            After the engineer roles have been filled, they will need to get together to ascertain the database and storage requirements.  The OpenStack specialist, Storage Engineer, Flutter/MIT App developer, Linux Engineer, PHP developer and DBA will all have to be involved in determining the storage requirements, with the DBA and developers working on the database requirements. 
+                         </p>
+
+                         <h3>5. Prepare security audit and requirements</h3>
+                         <p>
+                            Because of the extremely personal nature of the data being stored and the fact that it will be accessed over the internet (although this will be encrypted), the project demands that the data be as secure as possible.  To this end, the security advisor will perform a security audit and assist the implementors to satisfy the security requirements of the platform.
+                         </p>
+                    <h3>8. Obtain quotes for hardware and software</h3>
+                         <p>
+                            Quotes for the hardware, software licences, network links, and rack space will need to be obtained prior to any physical work being performed.  When obtaining the quotes, consideration needs to be made to the lead time for delivery of the items quoted on.  We will go to market and request quotes from 3 different suppliers for each piece of technology.  The lowest quote that can provide the items will be selected.  
+                         </p>
+                    
+                    <h3>9. Create purchase orders</h3>
+                         <p>
+                            Once the quotes have been finalised and agreed upon, the project will raise purchase orders and despatch them to relevant vendors within 1 working day.  
+                         </p>
+
+                    <h3>10. Receive goods </h3>
+                         <p>
+                            Once the goods have been received, they will all have to be checked for completeness, and then assembled and powered on to the initial configuration stage to ensure that the products are functioning as would be expected.  This part will be completed by the engineers responsible for each product.   
+                         </p>
+
+                         <h3>6. Prepare network map and identify requirements</h3>
+                         <p>
+                            A network map will be drawn up as part of the project.  This will communicate the infrastructure layout and how it is all connects in a visual presentation which will enable everyone on the project to get a good understanding of how everything fits together.  It will also be a valuable artifact for the support team after the project is complete.  
+                         </p>
+                    
+                    <h3>11. Setup firewalls, router, and switches </h3>
+                         <p>
+                            The network equipment will be setup and configured by the network engineer with input from the security advisor.  The network configuration will consist of 4 four CheckPoint firewalls configured in a failover cluster.  CheckPoint firewalls were chosen for their ease of configuration and scalability (up to 52 firewalls) [5].  Beneath the firewalls in the stack will be 2 Cisco network routers in a failover configuration [2].  The routers will connect to the internal network switches which will be Cisco Catalyst 3750 stack switches [6].  The switches will be directly connected to the servers running OpenStack.   
+                         </p>
+
+                    <h3>12. Build servers and load OS</h3>
+                         <p>
+                            The physical servers being used in the project are Dell PowerEdge R830 rack servers which were chosen because they are designed for virtualisation, with 4 CPU sockets, and 48 DIMM slots for up to 64GB DDR4 RAM in each slot [2].  The servers will be built and have the OS loaded onto them by the OpenStack specialist to ensure the base configuration meets the best practices for OpenStack. 
+                            <br>
+                            The virtual servers will be built and configured by the Linux Engineer.  At the initial implementation stage of the project, there will be 6 virtual machines, 2 each for databases, front-end web, and the backend API’s.  Each pair of servers will be configured in high availability failover clusters.  This approach allows for easy scaling as the virtual machines can be cloned and running in production within minutes. 
+
+                         </p>
+                    <h3>13. Setup storage</h3>
+                         <p>
+                            The storage appliances chosen for this project are TrueNAS storage appliances which will be configured in a high availability cluster.  The underlying disks of the storage arrays will be configured in RAID 6 disk arrays.  The ZFS file system will be used to format the storage pools on the disks.  ZFS is a widely used filesystem in the *nix world and has snapshot and replication capabilities.  In addition to the afore mentioned, TrueNAS allows the running of Linux containers which can be used to run services such as Apache2 [2].     
+                         </p>
+                    
+                    <h3>14. Setup OpenStack</h3>
+                         <p>
+                            The setup of OpenStack will be performed by the OpenStack specialist.  Five servers will be used for OpenStack, 2 for the management of the OpenStack environment and 3 for backend services.  This can be expanded in the future should the need arise.   
+                         </p>
+
+                    <h3>15. Configure web servers </h3>
+                         <p>
+                            The web servers will also be configured by the Linux Engineer with input from the Security advisor.  The web servers will be Apache2 running on Ubuntu OS.    
+                         </p>
+                    <h3>16. Configure databases </h3>
+                         <p>
+                            The DBA will use the data model to configure the databases.  The Security advisor will assist as this is the critical data of patients that cannot be exploited under any circumstances.  A breach of client information would most likely end the App due to a suffering reputation and possible legal implications including being taken to court for damages.    
+                         </p>
+
+                         <h3>References</h3>
+                            <ol>
+                            <li>Figma. 2021. Free Prototyping Tool to Create Clickable Prototypes | Figma. [online] Available at: <https://www.figma.com/prototyping/> [Accessed 3 November 2021]. </li>
+                            <li>Rodriguessunil.github.io. 2021. Project Ideas | The Magpies [A2 Group 10]. [online] Available at: <https://rodriguessunil.github.io/Magpies/project-ideas> [Accessed 19 November 2021]. </li>
+                            <li>Wrike.com. 2021. What Is a Project Communication Plan? | Wrike. [online] Available at: <https://www.wrike.com/blog/what-is-a-project-communication-plan/> [Accessed 16 November 2021]. </li>
+                            <li>Erwin.com. 2021. What Is a Data Model? | erwin, Inc.. [online] Available at: <https://www.erwin.com/solutions/data-modeling/data-model.aspx> [Accessed 19 November 2021]. </li>
+                            <li>n.d. next generation firewall buyers guide. [ebook] CheckPoint, pp.17,19.  Available at: <http://www.checkpoint.com> [Accessed 16 October 2021]. 
+                            <li>Support, P., Switches, C. and TechNotes, C., 2021. Creation and Management of Catalyst 3750 Switch Stacks. [online] Cisco. Available at: <https://www.cisco.com/c/en/us/support/docs/switches/catalyst-3750-series-switches/71925-cat3750-create-switch-stks.html> [Accessed 9 November 2021]. </li>
+
+                            </ol>
+
+                    
+                </div>
+
+                <br><br>
+
+                <div class="roles" id="roles">
+                    <h1>Roles for the Project</h1>
+                    <a href="#Home">Back to Top</a>
+                    <div>
+                
+                        <p>
+                            While doing the preliminary feasibility planning for the project, the following key roles were identified. Some of these roles will be hard to recruit and keep on the project and hence will be outsourced. Roles that require detailed investigation and had a high configuration aspect to it will be recruited. This will allow the application build processes to be bedded in and the outcome would that which would make this project successful. Hardware installation will be outsourced to third party vendors who may provide lease of hardware and space for the initial period until the application is setup and clients sourced. The below roles are identified and explained in detail below. 
+                        </p>
+                        <p>
+
+                            <h3>Project Sponsor</h3>
+                            The project sponsor will be Team Magpies. The team will ensure that highest priority is placed on ensuring that the project is successful, and any shortfalls or bugs are challenged and ironed out early. The team will ensure funding is sourced and the correct use of this funding is undertaken. The team will sign off on the project plan and guide the Project Manager to determine the critical path in getting this project completed on time on budget.
+                            <br>
+                            <h3>Project Manager (Outsourced)</h3>
+                            The Project Manager (PM) is responsible for planning, coordinating, and managing the project plan of the whole end to end project. They ensure that tasks are done at the correct time, on budget and the scope is adhered to. Any changes to the scope or workload are identified in time and discussed with the Project Sponsor. Plans are reshuffled to accommodate these changes so that the project timeline is least affected.
+                            The Project Manager is responsible for ensuring all risks are identified and maintain an up-to-date risk register of the project. The Project Manager publishes the project timeline, S-Curves, and a budget report for the project. They organise and chair the meetings to ensure compliance to the project and ensure they have a good picture of where the project is at any given time.
+                            <br>
+                            <h3>Network Engineer</h3>
+                            The Network Engineer will set up the 4 firewalls, routers and network switches in the required configuration to support the application. While the application is getting setup and testing commence, the Network Engineer will troubleshoot problems to maximise performance. They will administer firewalls and ensure the IT systems are secure. Their focus is to ensure our clients get online securely with a reliable connection and without much trouble.
+                            <br>
+                            <h3>Senior Storage Engineer</h3>
+                            The Senior Storage Engineer is responsible for the design and deployment of storage arrays along with the fibre switches. The storage engineer will write up procedures and standards for maintaining consistent data storage, uptime and ensure there is enough disk capacity to store and run the applications.
+                            <br>
+                            <h3>Database Administrator</h3>
+                            The database admin ensures that the data is structured correctly in relational databases with proper security protocols in place. They must have a clear vision of the applications data needs and put plans in place to ensure data recording and reporting requirements are achieved. Slow and sluggish databases have a big effect on the usability and reliability of the application.
+                            <br>
+                            <h3>Commercial and Marketing Specialist (Outsourced)</h3>
+                            The Commercial and Marketing Specialist will help the team obtain the necessary hardware and software with the appropriate time frames. They will help negotiate contracts with suppliers and work with the project manager to ensure parts are expedited to minimise delays to the project. They contact with the purchasing community will help the team to get exposure for potential marketing of our application.
+                            <br>
+                            <h3>OpenStack Specialist</h3>
+                            The OpenStack Specialist develops the application on the Cloud Platform. They design API to connect to various other sub applications to expose data into the parent application. They are high in demand and depending on availability this position could be fully outsourced to offshore consultants.
+                            <br>
+                            <h3>Flutter Developer (Outsourced)</h3>
+                            Flutter developers design and create mobile apps. As these developers are hard to get, we would look at outsourcing these resources. This will keep the team focussed on the design and development. Their main goal will be to make the app more user friendly and visually appealing to gain momentum in the sales post go live.
+                            <br>
+                            <h3>Linux Engineer</h3>
+                            The Linux engineer will configure the Linux operating system and build associated services on to the servers.
+                            <br>
+                            <h3>PHP Developer</h3>
+                            The PHP developer will write the backend code and API for the application to interface with the various objects.
+                            <br>
+                            <h3>Hardware Installers</h3> 
+                            The hardware installers will install all of the hardware into racks prior to the configuration work. They will be ensuring the power and backup power is made available on the racks.  The hardware engineers are responsible for ensuring hardware components are installed and operated in the correct sequence. They ensure that the hardware components are configured correctly so that software is executed properly.
+                            <br>
+                            <h3>Security Advisor</h3>
+                            The security advisor will be the project key resource to installing and configuring firewalls and intrusion detection devices. The resource will guide the project team on any vulnerabilities that may arise from day to day and post go live. The role will ensure all security threats are handled in the appropriate manner and resolved immediately. The position will run reports for the Australian Medical Association from time to time to ensure our application is licenced.
+
+                        <h3>References</h3>  
+                            <OL>
+                                <li>SEEK. 2021. No page title. [ONLINE] Available at: https://www.seek.com.au/job/54680302?type=standard#searchRequestToken=070612f8-9269-4e20-9633-a156ba0873fd. [Accessed 17 November 2021].</li>
+                                <li>Freelancer Blog. 2021. What Does a Network Engineer Do? | Career Insights. [ONLINE] Available at: https://www.freelancermap.com/blog/what-does-network-engineer-do/#:~:text=Some%20of%20the%20key%20responsibilities%20of%20a%20network,Liaising%20with%20project%20managers%20and%20service%20desk%20engineers. [Accessed 18 November 2021].</li>
+                                <li>Storage Engineer Jobs & Job Description | Field Engineer. 2021. Storage Engineer Jobs & Job Description | Field Engineer. [ONLINE] Available at: https://www.fieldengineer.com/skills/storage-engineer. [Accessed 18 November 2021].</li> 
+                                <li>What does a database administrator do? - CareerExplorer . 2021. What does a database administrator do? - CareerExplorer . [ONLINE] Available at: https://www.careerexplorer.com/careers/database-administrator/#:~:text=Some%20responsibilities%20of%20a%20database%20administrator%20include%3A%201,up%20and%20restoring%20data%20to%20prevent%20data%20loss. [Accessed 18 November 2021].</li>
+                                <li>Difference between Hardware Engineer and Software Engineer -. 2021. Difference between Hardware Engineer and Software Engineer -. [ONLINE] Available at: https://researchpedia.info/difference-between-hardware-engineer-and-software-engineer/#:~:text=Hardware%20Engineer%20studies%20the%20hardware%20design%20and%20the,rules%20and%20it%20also%20involves%20analysis%20of%20algorithm.. [Accessed 18 November 2021].</li>
+                                <li>Full Scale. 2021. What is a Flutter Developer? - Full Scale. [ONLINE] Available at: https://fullscale.io/blog/what-is-a-flutter-developer/. [Accessed 18 November 2021].</li>
+
+                            </OL>
+
+                        </p>
+                    
+                    </div>
+                    <br>
+                    
+                    <div class="Scope-and-limits" id="scope-and-limits">
+
+                        <h1>Scope and Limits</h1>
+                        <a href="#Home">Back to Top</a>
+                        <div class="content-container">
+                                
+                            <p>
+                                Scope is the division of work to be performed inside the project, no matter if the job is being done internally or outsourced. It must be a Scope, so the team and professionals are working on the same page.
+                                <br>
+                                One of the biggest issues when working on a team is often caused by discrepancies between peers, and to avoid that a scope is created.
+                                As part of the scoping, the project team will list out what is to be excluded and not part of the build. This provides a clear boundary of what the project scope entails.
+                                <br>
+                                The project team will list down the assumptions made. These provide a sounding board if any issues arise.
+                                In this case our scope consists in:
+                                <br>
+                                <h3>What needs to be done?</h3>
+                                <p>
+                                    It appears to be an easy answer, but when dealing with a big project and a large team with lots of different areas, the project must be divided per skills and professionals that are able to develop and make the App run. 
+                                </p>
+                                
+                                <h3>How should it be done?</h3>
+                                <p>
+                                    Yes, this is very important to get the project running smooth, if one member of the team uses a different software than the rest of the team, it could be a big problem down the track once everything is put together. A plan and instructions on how the job need to be done is crucial for the project success.
+                                </p>
+                                
+                                <h3>How long should it take?</h3>
+                                <p>
+                                    A time frame must be set. Anything can happen when dealing with technology, people can get sick and even leave the job on the middle of the project, for that reason a time frame and deadlines should be set on the start of the project to make sure that problems that comes up through it can be sorted on time.
+                                    <br>
+                                    Limits are very hard to set, it can depend on the risks, budget, professional skills, and market acceptance. Scope also tends to define limits to what lengths we should go to.
+                                    <br>All projects have risks, but inside the scope a limit for those risks should be set (our risk appetite), for example if there is a risk of fraud or data leak inside the App, a budget for Cyber Security is set and if the team thinks that it is too expensive for the project there is a limit.
+                                    <br>
+                                    Or if there is a lack of professionals available on the market and the existing staff is not enough to finish by a deadline, a limit is placed.
+                                    <br>
+                                    One of the limits when building the projects would be a device target, for example if the data analysis shows that this type of App is mostly used in Mobile phones, we would set a limit that users can only download from Apps on a mobile device, excluding errors that could occur when downloading the App in a Tablet for example.
+                                    <br>
+                                    Limitations on budget would also be welcomed once the prototype is ready and tested, so we would know how we would make money on the App and if the figures could give us a profit.
+
+                                </p>
+   
+                            </p>
+                                                     
+                              
+                            
+    
+                            
+                        </div>
+
+
+                        <div class="tools-tech" id="tools-tech">
+
+                            <h1>Tools and Technology</h1>
+                            <a href="#Home">Back to Top</a>
+                            <div class="content-container">
+                                    
+                                <p>
+                                    The following table describes the tools and technologies that will be used in the project.
+                                </p>
+                                                         
+                                <table style="width:100%">
+                                    <tr>
+                                        <th style="background-color:#b9dbf7;">Software</th>
+                                        <th style="background-color:#b9dbf7;">Description</th>
+                                        <th style="background-color:#b9dbf7;">Motivation</th>
+                                        <th style="background-color:#b9dbf7;">Availabilty</th>
+                                        <th style="background-color:#b9dbf7;">Previous Experience</th>
+                                    </tr>
+                                    <tr>
+                                        <td><b>GitHub</b></td>
+                                        <td>A provider of internet hosting for software development and version control using Git</td>
+                                        <td>With GitHub we can all contribute for the project looking up at the code and making changes as we go</td>
+                                        <td>Free to sign up, runs on a web browser, also with a desktop version available in most OS.</td>
+                                        <td>Joao (Intermediate)<br>Sunil (Intermediate)<br>Alexander (Intermediate)<br>Raul (Intermediate)<br>Jacqueline (Intermediate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Microsoft Teams</b></b></td>
+                                        <td>It's an app where groups can meet, chat, call and collaborate</td>
+                                        <td>We have video/audio meetings every week, we can send messages, reminders and share files with group members</td>
+                                        <td>Free to sign up, runs on a web browser, also with a desktop version available in most OS and Android</td>
+                                        <td>Joao (Intermediate)<br>Sunil (Senior)<br>Alexander (Intermediate)<br>Raul (Intermediate)<br>Jacqueline (Intermediate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Linux Ubuntu</b></td>
+                                        <td>Open-source and extremely popular OS, incorporate all features of a Unix OS with added customizable GUI</td>
+                                        <td>We picked Ubuntu to be The OS for our virtual servers because it's free and has a lot of support in the IT community</td>
+                                        <td>It’s a free to use operating system, you can download it from the website https://ubuntu.com/download</td>
+                                        <td>Joao (Intermediate)<br>Raul (Entry-level)<br>Alexander (Senior)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>OpenStack</b></td>
+                                        <td>An open-source platform that uses pooled virtual resources to build and manage private and public clouds</td>
+                                        <td>We will use it to be our cloud server manager</td>
+                                        <td>It's an open-source cloud computing platform</td>
+                                        <td>To be outsourced</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Apache</b></td>
+                                        <td>A popular Web server software. It enables a computer to host one or more websites that can be accessed over the Internet using a Web browser</td>
+                                        <td>We will use it as our HTTP host</td>
+                                        <td>Open source and hugely supported in the IT industry</td>
+                                        <td>Alexander (Senior)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>MariaDB</b></td>
+                                        <td>MariaDB is a relational database management system (DBMS) that is a compatible drop-in replacement for the widely used MySQL database technology</td>
+                                        <td>We will use it as our relational database</td>
+                                        <td>Open source and hugely supported in the IT industry</td>
+                                        <td>Sunil (Intermediate)<br>Alexander (Intermediate)<br> Jacqueline (Intermediate)</td>
+                                    <tr>
+                                        <td><b>MIT App Inventor</b></td>
+                                        <td>Is a web application integrated development environment that allows newcomers to computer programming to create application software(apps) for two operating systems (OS): Android, and iOS</td>
+                                        <td>MIT App inventor is one of two options to develop our Mobile app, really easy to use, you create applications by dragging and dropping components into design view, also free so it will not cost anything for our project</td>
+                                        <td>Free to use</td>
+                                        <td>To be outsourced</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Google Flutter</b></td>
+                                        <td>Is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase</td>
+                                        <td>Google Flutter is the other option for our app development, it's also quite simple to use, and free of any costs. Is somewhat similar to MIT App Inventor, and when it comes to time we will determine which one we will use</td>
+                                        <td>Free to use</td>
+                                        <td>Alexander (Intermediate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>PHP Programming</b></td>
+                                        <td>PHP is a popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world</td>
+                                        <td>We will use PHP to write our backend and API</td>
+                                        <td>Free to use</td>
+                                        <td>Sunil (Entry Level)<br>Alexander (Intermediate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Figma</b></td>
+                                        <td>A web-based graphics editing and user interface design app. You can use it to do all kinds of graphic design work in our group we will be designing a mobile app interface</td>
+                                        <td>We choose Figma because it's free to use and with this app we can design a trial of how our app will look like</td>
+                                        <td>Free to use</td>
+                                        <td>Alexander (Intermediate)<br>Sunil (Entry Level)</td>
+                                    </tr>
+                                    </tr>
+                                </table>   
+                                <br>
+                                <h3>Hardware Requirements</h3>
+                            <p>
+                                        The hardware requirements for the project are listed below:
+
+                                    <ul>
+
+
+                                   
+                                        <li><b>Network Firewalls</b> - 4 firewalls configured in a failover cluster. The configuration will use CheckPoint firewalls because they are easy configuration, can scale to 52 gateways/firewalls with an intuitive management interface.</li> 
+                                        <li><b>Routers</b> - 2 network routers in a failover configuration.</li> 
+                                        <li><b>Network Switches</b> - 2 switches configured in a stack. </li>
+                                        <li><b>Servers</b> - 5 servers running OpenStack, 2 for management and 3 for backend services. For the servers, we will be using Dell PowerEdge R830 Rack Servers. Each of these servers have 4 CPU sockets, and 48 DIMM slots for up to 64GB DDR4 RAM in each slot. </li>
+                                        <li><b>Storage</b> - TrueNAS storage appliances configured in a cluster. These will run storage pools configured on top of RAID 6 disks. The file system used will be ZFS. TrueNAS is an open-source Network Attached Storage device. </li>
+                                    </ul>
+                                    <h3>References</h3>
+                                        <ol>
+                                            <li>Stackable. 2021. Apache. [ONLINE] Available at: https://www.stackscale.com/blog/top-web-servers/. [Accessed 20 November 2021]. </li>
+                                            <li>Openstack. 2021. The Most Widely Deployed Open Source Cloud Software in the World. [ONLINE] Available at: https://www.openstack.org/. [Accessed 20 November 2021]. Check Point. 2020. What is a Next Generation Firewall?. [ONLINE] Available at: https://www.checkpoint.com/cyber-hub/network-security/what-is-next-generation-firewall-ngfw/. [Accessed 20 November 2021].</li> 
+                                            <li>Dell. 2021. PowerEdge R830 Rack Server. [ONLINE] Available at: https://www.dell.com/en-au/work/shop/productdetailstxn/poweredge-r830. [Accessed 20 November 2021]. TrueNas. 2021. Open Storage. [ONLINE] Available at: https://www.truenas.com/. [Accessed 20 November 2021].</li>
+
+                                        </ol>
+                                    
+                            </p>
+                                
+        
+                                
+                        </div>
+                        
+                        <div class="testing" id="testing">
+
+                                <h1>Testing</h1>
+                                <a href="#Home">Back to Top</a>
+                                <div class="content-container">
+                                        
+                                    <p>
+                                        When it comes to developing an App, testing the project is one of the most important steps for success. It is the part of the scope where you can see the weakness of the project and fix the issues you have before investing time and money on it.
+                                    </p>
+
+                                    <p>
+                                        There are many types of tests that can be performed on Mobile Applications. On the technical and developing aspects, usability, compatibility, interface, services, performance and security testing are the main ones when developing an App the will be launched and used by a large portion of the community, these tests would ensure that the App is easy to use and provides a good user experience, if it works on different devices, screens and operational systems, if all the menu and buttons are working accordingly, if it will work in different connections like 3G, 4G, 5G and Wi-Fi, if it uses the device battery in excess and if it needs some sort of log-in, validation and the system protects the data or not.
+                                    </p>
+                                        
+                                    <p>
+                                        Once the technical part is running smooth, it is now time to check if real users are happy with it. You can start small and tell some friends and family to download your App and try to use it and give you feedback, or even check how similar Apps are being accept on the OS storer, that will also give you an idea of the issues and ideas that users are having when looking at the feedbacks.
+                                    </p>    
+                                    
+                                    <p>
+                                        As our App involves medical practices and Doctors as well as the patients, three tests would be essential for the App. If a doctor cannot use it correctly the patient would have misleading information as well as the opposite. Thinking about it testing in a small Medical Centre would be the best for this purpose, the app would be available for the staff and the patients of that practice and from there the feedbacks would be constructive so it can escalate for more people and places.
+                                    </p>
+                                    <p>
+                                        If the budget agrees that are some companies that offer a testing program doing paid survey.
+                                    </p>    
+                                        
+             
+                        </div>
+        
+                        <div class="timeframe" id="timeframe">
+
+                            <h1>Timeframe</h1>
+                            <a href="#Home">Back to Top</a>
+                            <div class="content-container">
+                                    
+                                <p>
+                                    Below is the Gantt Chart that has been created for the project. It covers the phase from the beginning of Assignment 3 and concludes with the go live of the app.
+                                </p>
+                                <div>
+                                    <img src="assets/detailed-description/timeframe.png" alt="timeframe" width="850">
+                                </div>
+                                <br>
+
+                                <a
+                                href="https://teams.microsoft.com/l/file/CEB10392-C655-4583-99A5-F4FA679AC43D?tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b&fileType=pdf&objectUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945%2FShared%20Documents%2FGeneral%2FASSIGNMENT%203%2FGroup%2010%20Magpies%20Assignment%203%20Final.pdf&baseUrl=https%3A%2F%2Frmiteduau.sharepoint.com%2Fsites%2FGroup10945&serviceName=teams&threadId=19:WH7vqEd1wC9VpBO-gbQNzpi098orWaIfHGKP3A9gK4w1@thread.tacv2&groupId=a02124aa-2802-424e-9924-b09bc9b11669"
+                                title="Link to Magpie Medical Gantt Chart"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Link to complete Magpie Medical<sup>&reg;</sup>Gantt Chart
+                            </a>
+                                    
+                                <p>
+                                    As can be seen in the above Gantt chart, all the project preparation and documentation are complete as all deadlines have been met at this stage, with the remainder of the work needing to be completed being the actual build and implementation of the infrastructure and development of the backend, frontend, and the mobile App itself. 
+
+                                </p>   
+
+                                
+                        </div>
+        
+                            <div class="risks" id="risks">
+
+                                <h1>Risks</h1>
+                                <a href="#Home">Back to Top</a>
+                                <div class="content-container">
+                                        
+                                    <p>
+                                        Below are the risks identified for this project.
+                                        
+                                    </p>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <th style="background-color:#b9dbf7;">Risk Rank</th>
+                                            <th style="background-color:#b9dbf7;">Risks</th>
+                                            <th style="background-color:#b9dbf7;">Description/Impacts</th>
+                                            <th style="background-color:#b9dbf7;">Likelihood</th>
+                                            <th style="background-color:#b9dbf7;">Consequency Severity</th>
+                                            <th style="background-color:#b9dbf7;">Action Plans</th>
+                                        </tr>
+                                        <tr>
+                                            <td><b>High</b></td>
+                                            <td>Inaccurate estimation</td>
+                                            <td>Can occur if our group members underestimate the length of the project and start it late, consequently affecting the timeframe for our project. The impacts are not finishing the project in time or having to hand it in incomplete</td>
+                                            <td>Possible</td>
+                                            <td>Major</td>
+                                            <td>To start early rather than late by setting up frequent meetings and communicating with group members, also elaborating immediate priorities and estimations so members can follow guidelines to be on time</td>
+                                        </tr>  
+                                        <tr>
+                                            <td><b>High</b></td>
+                                            <td>Health Clinics/professionals engagement</td>
+                                            <td>There’s a chance that clinics won’t adhere to the app because there are other similar apps in the market, or they don’t want to change the way they do business. The impacts are having no users and that way causing loss of time and money invested</td>
+                                            <td>Possible</td>
+                                            <td>Major</td>
+                                            <td>Listening to health professionals and doing user testings and surveys, advertising and showing convenient features and engaging with professionals and showing them how to use the app</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>High</b></td>
+                                            <td>Patients’ engagement</td>
+                                            <td>End-users could also not be very engaging with the app, or resistant to change and use of technology. The impacts are having no users and that way causing loss of time and money invested</td>
+                                            <td>Possible</td>
+                                            <td>Major</td>
+                                            <td>Testing and surveys with patients, advertising, engaging and showing people how to use the app</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Medium</b></td>
+                                            <td>Poor Prodductivity</td>
+                                            <td>That could affect our project as we have limited hours to work on this project, every member in the group is busy with work, family and other studies. The impact is not finishing in time or handing in an incomplete project</td>
+                                            <td>Rare</td>
+                                            <td>Moderate</td>
+                                            <td>By prioritizing the areas we need to get done, also following timeframes.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>High</b></td>
+                                            <td>Hardware not available/ not arriving in time</td>
+                                            <td>That could put the whole project on hold, as some software that needs to be ordered also need to be configured in time for the project to work. The impact is having to pause the project progress and in other cases not finishing in time</td>
+                                            <td>Unlikely</td>
+                                            <td>Critical</td>
+                                            <td>Ordering all hardware early if not available look for different suppliers</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Medium</b></td>
+                                            <td>Cyber-security breach</td>
+                                            <td>Cyber-security can be a problem if our app becomes popular. Having people's personal information stored in a database is a gold mine for cyber-criminals. The likelihood of an attack is also linked to the number of users that adhere to our app. The impact could be damage to reputation or loss of money due to extortion</td>
+                                            <td>Unlikely <br>(To be reassessed)</td>
+                                            <td>Moderate</td>
+                                            <td>Use all possible cyber-security knowledge we have up to date to avoid any data breach, if the app becomes popular, we could invest a percentage of our revenue into advanced cyber-security. As this app increases in popularity, this risk should be reassessed</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>High</b></td>
+                                            <td>Skill shortage</td>
+                                            <td>As we can see in our "tools and technology", some of the software we are using is new to some of our group members. The impact is having low-quality services or code resulting in an unfinished app, also the fact some of us are new to some of the software there’s a possibility that the software does not work as well as we believe it should</td>
+                                            <td>Alomst Certain</td>
+                                            <td>Minor</td>
+                                            <td>Focusing on the areas and skills that we fall short, and each group member investing some extra time into learning and becoming better at the software we need to use in the project. We could also plan who is doing what part of the project early on, that way allowing members to study their area in order to better prepare themselves</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Medium</b></td>
+                                            <td>Server hardware Failure</td>
+                                            <td>If hardware equipment on our server stops working, it could impact server access by users. The impacts are having appointments cancelled by customers not being able to access information or attend. The consequence severity depends on how often it happens and how long the server is down</td>
+                                            <td>Rare <br>(To be reassessed)</td>
+                                            <td>Moderate</td>
+                                            <td>We already had this in mind at the beginning, hardware for the server is going to be configured in a failover cluster configuration, having always a backup copy of the hardware ready to replace a faulty part</td>
+                                        </tr>
+                                        </table>  
+                                        
+                                        <br>
+                                        <h3>Matrix to Identify Risk Rank</h3>
+                                        <p>
+                                            Below is the risk matrix that was used to derive the risk score.
+                                        </p>
+
+                                        <div>
+                                            <img src="assets/detailed-description/risk.png" alt="riskmatrix" width="500" >
+                                        </div>
+                                        <br>
+
+                                        <h3>References</h3>
+                                        <ol>
+
+                                            <li>Stakeholdermap. 2020. Risk Management, Risk Analysis, Templates and Advice. [ONLINE] Available at: https://www.stakeholdermap.com/risk/register-common-project-risks.html. [Accessed 20 November 2021].</li> 
+                                            <li>Reetu Sharma. (2019). Top 10 Risks in Software Projects with Risk Management Techniques. - Project Management Approach. [Online Video]. 1 July 2019. Available from: https://www.youtube.com/watch?v=Xo89_-_SI70&ab_channel=ReetuSharma. [Accessed: 20 November 2021].</li> 
+                                            <li>TechTarget. 2018. Home Risk management Compliance, risk and governance What is risk management and why is it important? DEFINITION What is risk management and why is it important?. [ONLINE] Available at: https://searchcompliance.techtarget.com/definition/risk-management. [Accessed 20 November 2021].</li>
+
+
+
+
+                                        </ol>
+
+                                        
+
+                                      
+                                    
+            
+                                    
+                                </div>
+        
+                            <div class="group-processes" id="group-processes">
+
+                                    <h1>Group Processes and Communications</h1>
+                                    <a href="#Home">Back to Top</a>
+                                    <div class="content-container">
+                                            
+                                        <p>
+                                            The Magpies group chose Microsoft Teams as our repository for storing documents, scheduling meetings, and communicating among group members. We were able to transition between different communication modalities on this platform, such as video conferencing, instant messaging, document collaboration, and file sharing. It also functioned as a reminder calendar. Meetings were organised by Teams, and each meeting had a designated individual who took minutes. The meetings were recorded so that we could go back, watch, and listen to what we discussed. Meeting minutes were posted to the Teams folders. Teams was used as a collaboration tool to discuss concerns and receive peer reviews of the assigned task, throughout A2, A3, and A5. The group met twice a week using Teams meetings. Chats and individual conversations are help between group members to discuss their work and obtain feedback. On the final week of the assignment, we decided to have daily catch-up meetings to ensure we are also finalising the work to be submitted. Teams is available on phones and PC’s and hence formed the best tool to use. It also helps when you are on the move as your mobile device is always with you.
+             
+                                        </p>
+
+                                        <p>
+                                            Our meetings were recorded in Teams so members who were not available could watch the recording and identify what transpired and work out what needed to be done prior to the next meeting.
+                                        </p>
+
+                                        <p>
+                                            The Magpies also used GitHub as a collaboration platform. When one of our group members wanted to incorporate one of his or her tasks into the group leader's repository or on a Word document, we used this as a Pull Request. Furthermore, if a team member is unable to continue working due to a challenging issue, he or she can send a pull request for assistance to the rest of the team.
+                                        </p>
+
+                                        <p>
+                                            Good communication includes going above and beyond to achieve progress. Checking in with your group members requires more than just making sure they're doing their best. When it come to an assigned task, your group members may appear productive, but they may later announce that they have given up. When this happens, the gap takes longer to close. Hence if you check in with the group members on a regular basis and address concerns, you can resolve them before they become major issues.  
+                                        </p>
+
+                                        <p>
+                                            When we move to the build phase of the project, we will use the same methodology. Initial stages there will be frequent meetings held to bed the process and identify requirements and document processes. We have built a Communications and Engagement plan which will be used to provide communications within the development team and externally.  Our commercial and marketing resource will ensure the project is conveyed to potential clients so that to gain an insight into where our focus would be in future.
+                                        </p>    
+                                            
+                                             
+                                            
+
+                                                                 
+                                          
+                                        
+                
+                                        
+                                    </div>
+            
+                    </div>
+                    
+                    
+                        
+                    
+                </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

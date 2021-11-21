@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- page specific css file -->
+    <link rel="stylesheet" href="styles/skills-and-jobs.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Skills and Jobs | The Magpies [A3 Group 10]</title>
+</head>
+
+<body>
+    <app-container>
+        <app-header>
+            <div class="left">
+                <header-nav>
+                    <button class="icon" onclick="toggleNavState()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></button>
+                    <nav-container>
+                        <button class="nav-link" onclick="navigateLocal('root')">Home</button>
+                        <button class="nav-link" onclick="navigateLocal('team-profile')">The Team</button>
+                        <button class="nav-link" onclick="navigateLocal('tools')">Tools</button>
+                        <button class="nav-link" onclick="navigateLocal('project-description')">Project Description</button>
+                        <button class="nav-link" onclick="navigateLocal('detailed-description')">Detailed Description</button>
+                        <button class="nav-link" onclick="navigateLocal('skills-and-jobs')">Skills and Jobs</button>
+                        <button class="nav-link" onclick="navigateLocal('group-reflection')">Group Reflection</button>
+                    </nav-container>
+                </header-nav>
+            </div>
+            <div class="right">
+                <div class="team-name">
+                    <div class="contacts">
+                        <div class="icon" onclick="navigate('https:\/\/github.com/s3921239')">
+                            <img src="assets/profile-img/alex.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Alexander Hutton</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RaulJunqueira')">
+                            <img src="assets/profile-img/raul.png" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Raul Junqueira Da Silva</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JoaoPedroNunesDoege')">
+                            <img src="assets/profile-img/joao.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Joao Nunes Doege</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/JaoPen')">
+                            <img src="assets/profile-img/jacqueline.jpeg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Jacqueline Penas</div>
+                        </div>
+                        <div class="icon" onclick="navigate('https:\/\/github.com/RodriguesSunil')">
+                            <img src="assets/profile-img/sunil.jpg" alt="profile-img">
+                            <div class="tooltip"><div class="arrow"></div>Sunil Rodrigues</div>
+                        </div>
+                    </div>
+                    <tool-tip title="The Team">The&nbsp;Magpies</tool-tip>
+                </div>
+            </div>
+        </app-header>
+        <app-page-container>
+            <page-root>
+
+               <div class="hero-2">
+                    <div>
+                        <h1>Skills and Jobs</h1>
+                    </div>
+                    <div style="display:flex; justify-content:center;">
+                        <img src="assets/logo.png" alt="magpies-logo" class="side-img" width="120px" style="transform:scaleX(-1);">
+                    </div>
+                </div>
+
+                <div class="page-contents-container" style="margin-top: -40px;">
+                    <div>
+                        <span class="title">Contents</span>
+                        <div class="page-contents">
+                            <a href="#network-engineer"><button>Network Engineer</button></a>
+                            <a href="#open-stack-specialist"><button>Open Stack Specialist</button></a>
+                            <a href="#senior-storage-engineer"><button>Senior Storage Engineer</button></a>
+                            <a href="#database-administrator"><button>Database Administrator</button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                    <h1>Skills and Jobs</h1>
+                    
+                    <p>
+                        Once an external sponsor is obtained, the following positions will be recruited for the design and construction work to commence. The roles are identified are as follows:
+                    </p>
+                    <ul>
+                        <li>Network Engineer</li>
+                        <li>Open Stack Specialist</li>
+                        <li>Senior Storage Engineer</li>
+                        <li>Database Administrator</li>
+                    </ul>
+
+                </div>
+                <br>
+
+                <div>
+
+                    <h1>Our Jobs</h1>
+
+
+                    <div id="network-engineer">
+
+                        <h2>Network Engineer</h2>
+                        <span style="display: block; margin-bottom: 0.4em;"><i>Job ID A12456</i></span>
+                        <span style="display: block;">Sydney &nbsp;&nbsp; Brisbane &nbsp;&nbsp; Newcastle &nbsp;&nbsp; Perth</span>
+                        <span style="display: block;">Educational Information Technology Sector</span>
+                        <span style="display: block;">Full Time 12-month Contract</span>
+                        <br>
+
+                        <h4>Who We are?</h4>
+                        <p>
+                            Magpies is a group of students from RMIT who are preparing to launch a new App called Magpie Medical into the market. The app will provide a convenient and more time friendly way for people without medical emergencies to interact with a local General Practitioner from the comfort of their home. The app is scheduled for go live end of Q1-2022. It is your opportunity to work with a team of experts in deployment of an innovative application that will benefit people throughout Australia. 
+                        </p>
+
+                        <h4>How do you fit in the company?</h4>
+                        <p>
+                            Magpies is looking for an experienced Network Engineer who can work unsupervised on a 12-month contract, building the company’s firewall and setting up the Routers and Network Switches. You will design, deploy, and manage WAN, Cloud, Check Point and Cisco Systems as per the requirements.
+                        </p>
+
+                        <h4>Your Profile</h4>
+                        <p>
+                            If you are a motivated, self-starter who can work remotely and unsupervised delivering network-based solutions we would like to speak to you. You will have good communication skills, be punctual and work harmoniously within a team environment. You will identify risks and put mitigation plans in place. An IT degree or extensive Network Certification is what we are looking for you to have. You will have authorisation to work in Australia and be willing to undergo police clearance if requested.
+                        </p>
+
+                        <h4>Your key skills include but are not limited to:</h4>
+                        <ul>
+                            <li>Associate level certification in the field of Firewalls Routers, Network Switching or Load Balancing.</li>
+                            <li>Over 5 years’ experience in network security, firewalls, and networking.</li>
+                            <li>Professional level understanding of network communications protocols</li>
+                            <li>Work unsupervised and remotely ensuring tasks are completed as per the project plan.</li>
+                            <li>Experience in troubleshooting Cisco, Citrix firewalls, Check Point, Palo Alto firewalls.</li>
+                            <li>Experience in designing and developing DMZ designs.</li>
+                        </ul>
+                        
+                        <h4>How to Apply?</h4>
+                        <p>
+                            To apply for the role, email your CV along with a cover letter detailing what you can bring to our organisation and assist in the deployment of this application. Send your completed applications to:
+                            <a href = "mailto: recruitment@magpies.com">recruitment@magpies.com</a>
+                        </p>
+                        <p>
+                            <br>
+                            Application close:01 December 2021<br>
+                            Shortlisting of the applications will commence on the 05 Dec 2021.
+                        </p>
+
+                    </div>
+                    <br>
+
+                    <div id="open-stack-specialist">
+                        
+
+                        <h2>Open Stack Specialist</h2>
+                        <span style="display: block; margin-bottom: 0.4em;"><i>Job ID A12458</i></span>
+                        <span style="display: block;">Sydney &nbsp;&nbsp; Brisbane &nbsp;&nbsp; Newcastle &nbsp;&nbsp; Perth</span>
+                        <span style="display: block;">Educational Information Technology Sector</span>
+                        <span style="display: block;">Full Time 12-month Contract</span>
+                        <br>
+
+                        <h4>Who We are?</h4>
+                        <p>
+                            Magpies is a group of students from RMIT who are preparing to launch a new App called Magpie Medical into the market. The app will provide a convenient and more time friendly way for people without medical emergencies to interact with a local General Practitioner from the comfort of their home. The app is scheduled for go live end of Q1-2022. It is your opportunity to work with a team of experts in deployment of an innovative application that will benefit people throughout Australia. 
+                        </p>
+
+                        <h4>How do you fit in the company?</h4>
+                        <p>
+                            Magpies is looking for an experienced Open Stack Developer to implement and support a cloud-based application using OpenStack. This is an innovative opportunity to work with a team of developers designing a niche application.
+                        </p>
+
+                        <h4>Your Profile</h4>
+                        <p>
+                            If you are a motivated, self-starter who can work remotely and unsupervised delivering network-based solutions we would like to speak to you. You will have good communication skills, be punctual and work harmoniously within a team environment. You will identify risks and put mitigation plans in place. You will have experience building OpenStack platforms and running cloud virtualisation in large and complex enterprise environments. You will have authorisation to work in Australia and be willing to undergo police clearance if requested.
+                        </p>
+
+                        <h4>Your key skills include but are not limited to:</h4>
+                        <ul>
+                            
+                            <li>Associate level certification in OpenStack development and Cloud technology.</li>
+                            <li>Experience with administering/designing IP based storage solutions.</li>
+                            <li>Experience with administering/designing OpenShift/Kubernetes.</li>
+                            <li>Experience in CI/CD toolchains and processes, preferably GitLab.</li>
+                            <li>Well-developed communications and documentation skills.</li>
+                            <li>Experience in Agile/Scrum delivery of projects.</li>
+
+                        </ul>
+                        
+                        <h4>How to Apply?</h4>
+                        <p>
+                            To apply for the role, email your CV along with a cover letter detailing what you can bring to our organisation and assist in the deployment of this application. Send your completed applications to:
+                            <a href = "mailto: recruitment@magpies.com">recruitment@magpies.com</a>
+                        </p>
+                        <p>
+                            <br>
+                            Application close:01 December 2021<br>
+                            Shortlisting of the applications will commence on the 05 Dec 2021.
+                        </p>
+                        
+                    </div>
+                    <br>
+
+                    <div id="senior-storage-engineer">
+                        
+
+                        <h2>Senior Storage Engineer</h2>
+                        <span style="display: block; margin-bottom: 0.4em;"><i>Job ID A12459</i></span>
+                        <span style="display: block;">Sydney &nbsp;&nbsp; Brisbane &nbsp;&nbsp; Newcastle &nbsp;&nbsp; Perth</span>
+                        <span style="display: block;">Educational Information Technology Sector</span>
+                        <span style="display: block;">Full Time 12-month Contract</span>
+                        <br>
+
+                        <h4>Who We are?</h4>
+                        <p>
+                            Magpies is a group of students from RMIT who are preparing to launch a new App called Magpie Medical into the market. The app will provide a convenient and more time friendly way for people without medical emergencies to interact with a local General Practitioner from the comfort of their home. The app is scheduled for go live end of Q1-2022. It is your opportunity to work with a team of experts in deployment of an innovative application that will benefit people throughout Australia. 
+                        </p>
+
+                        <h4>How do you fit in the company?</h4>
+                        <p>
+                            Magpies is looking for an experienced Storage Engineer to implement and support TrueNAS storage appliances set up in a cluster. This is an innovative opportunity to work with a team of developers designing a niche application.
+                        </p>
+
+                        <h4>Your Profile</h4>
+                        <p>
+                            If you are a motivated, self-starter who can work remotely and unsupervised delivering network-based solutions we would like to speak to you. You will have good communication skills, be punctual and work harmoniously within a team environment. You will identify risks and put mitigation plans in place. You have experience in design and running of large storage networks, cloud platforms and recording backups and snapshots. You will have authorisation to work in Australia and be willing to undergo police clearance if requested.
+                        </p>
+
+                        <h4>Your key skills include but are not limited to:</h4>
+                        <ul>
+                            <li>Bachelor’s Degree in engineering computer science.</li>
+                            <li>Experience in disaster recovery, backups, data replication and monitoring.</li>
+                            <li>Experience in CI/CD toolchains and processes, preferably GitLab.</li>
+                            <li>Well-developed communications and documentation skills.</li>
+                            <li>Expe<li>/li>rience in Agile/Scrum delivery of projects.</li>
+                        </ul>
+                        
+                        <h4>How to Apply?</h4>
+                        <p>
+                            To apply for the role, email your CV along with a cover letter detailing what you can bring to our organisation and assist in the deployment of this application. Send your completed applications to:
+                            <a href = "mailto: recruitment@magpies.com">recruitment@magpies.com</a>
+                        </p>
+                        <p>
+                            <br>
+                            Application close:01 December 2021<br>
+                            Shortlisting of the applications will commence on the 05 Dec 2021.
+                        </p>
+
+                    </div>
+                    <br>
+
+                    <div id="database-administrator">
+                        
+
+                        <h2>Database Administrator</h2>
+                        <span style="display: block; margin-bottom: 0.4em;"><i>Job ID A12465</i></span>
+                        <span style="display: block;">Sydney &nbsp;&nbsp; Brisbane &nbsp;&nbsp; Newcastle &nbsp;&nbsp; Perth</span>
+                        <span style="display: block;">Educational Information Technology Sector</span>
+                        <span style="display: block;">Full Time 12-month Contract</span>
+                        <br>
+
+                        <h4>Who We are?</h4>
+                        <p>
+                            Magpies is a group of students from RMIT who are preparing to launch a new App called Magpie Medical into the market. The app will provide a convenient and more time friendly way for people without medical emergencies to interact with a local General Practitioner from the comfort of their home. The app is scheduled for go live end of Q1-2022. It is your opportunity to work with a team of experts in deployment of an innovative application that will benefit people throughout Australia. 
+                        </p>
+
+                        <h4>How do you fit in the company?</h4>
+                        <p>
+                            Magpies is looking for an experienced database administrator to implement and support a cloud-based application using MariaDB. This is an innovative opportunity to work with a team of developers designing a niche application.
+                        </p>
+
+                        <h4>Your Profile</h4>
+                        <p>
+                            If you are a motivated, self-starter who can work remotely and unsupervised delivering network-based solutions we would like to speak to you. You will have good communication skills, be punctual and work harmoniously within a team environment. You will identify risks and put mitigation plans in place. You will have experience building and configuring large databases and apply ultimate security to them. You will ensure database backups and snapshots are kept ensuring data integrity. You will be the focal point for data reporting and visualisation.  You will have authorisation to work in Australia and be willing to undergo police clearance if requested.
+                        </p>
+
+                        <h4>Your key skills include but are not limited to:</h4>
+                        <ul>
+                            <li>Bachelor’s degree in IT or similar.</li>
+                            <li>Certification in MariaDB.</li>
+                            <li>Experience in CI/CD toolchains and processes, preferably GitLab.</li>
+                            <li>Well-developed communications and documentation skills.</li>
+                            <li>Experience in Agile/Scrum delivery of projects</li>
+  
+                        </ul>
+                        
+                        <h4>How to Apply?</h4>
+                        <p>
+                            To apply for the role, email your CV along with a cover letter detailing what you can bring to our organisation and assist in the deployment of this application. Send your completed applications to:
+                            <a href = "mailto: recruitment@magpies.com">recruitment@magpies.com</a>
+                        </p>
+                        <p>
+                            <br>
+                            Application close:01 December 2021<br>
+                            Shortlisting of the applications will commence on the 05 Dec 2021.
+                        </p>
+
+                    </div>
+                    <br>
+
+                </div>
+
+
+           </page-root>
+        </app-page-container>
+    </app-container>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
